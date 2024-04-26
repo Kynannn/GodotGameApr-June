@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714094596
+::res://::1714094933
 8-bit-hud.ttf::FontFile::3815233510160406869::1714093765::1714093829::1::::<><>::
 8bit16 2.ttf::FontFile::3254475331149737015::1714093765::1714093829::1::::<><>::
 Actor.gd::GDScript::-1::1714093765::0::1::::Actor<>CharacterBody2D<>::
@@ -25,7 +25,7 @@ jump.mp3::AudioStreamMP3::7823186386970144480::1714093765::1714093829::1::::<><>
 main_game.gd::GDScript::-1::1714093765::0::1::::<>Node2D<>::
 main_game.tscn::PackedScene::7686566814340802628::1714093765::0::1::::<><>::res://main_game.gd<>uid://cfojx3gbngwmv::::res://level_designs/level_1.tscn<>uid://c7cospx0xchne::::res://player/player.tscn<>uid://b0x0wce4cgu76::::res://Free Pixel Art Forest/Preview/Background.png<>uid://cmlyc6t228otu::::res://level_markers/level_reset/level_reset_area.tscn<>uid://542m08y7pian::::res://level_markers/level_start/level_start.tscn<>uid://d4nls2u54ty2q::::res://level_markers/level_end/level_end.tscn<>uid://4psi25sn7y0w::::res://PauseMenu.tscn
 menu.gd::GDScript::-1::1714093765::0::1::::<>Control<>::
-menu.tscn::PackedScene::9170682104333281848::1714094500::0::1::::<><>::res://menu.gd<>uid://bllt806y6he3s::::res://bg_settings.tscn<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf
+menu.tscn::PackedScene::9170682104333281848::1714094627::0::1::::<><>::res://menu.gd<>uid://bllt806y6he3s::::res://bg_settings.tscn<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf
 MicrosoftTeams-image (1).png::CompressedTexture2D::6014021310914995619::1714093765::1714093829::1::::<><>::
 node_2d.tscn::PackedScene::919907744659301650::1714094500::0::1::::<><>::
 noise.mp3::AudioStreamMP3::5332753412040231007::1714093765::1714093829::1::::<><>::
