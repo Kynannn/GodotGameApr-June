@@ -83,8 +83,9 @@ layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("4_142sw")
-theme_override_font_sizes/font_size = 5
-text = "omg please turn that off that is so loud"
+theme_override_font_sizes/font_size = 10
+text = "loud noise"
+horizontal_alignment = 1
 
 [node name="Sfx2" parent="MarginContainer/VBoxContainer" instance=ExtResource("3_sb134")]
 layout_mode = 2
