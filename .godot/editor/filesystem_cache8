@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714094498
+::res://::1714094596
 8-bit-hud.ttf::FontFile::3815233510160406869::1714093765::1714093829::1::::<><>::
 8bit16 2.ttf::FontFile::3254475331149737015::1714093765::1714093829::1::::<><>::
 Actor.gd::GDScript::-1::1714093765::0::1::::Actor<>CharacterBody2D<>::
@@ -25,9 +25,9 @@ jump.mp3::AudioStreamMP3::7823186386970144480::1714093765::1714093829::1::::<><>
 main_game.gd::GDScript::-1::1714093765::0::1::::<>Node2D<>::
 main_game.tscn::PackedScene::7686566814340802628::1714093765::0::1::::<><>::res://main_game.gd<>uid://cfojx3gbngwmv::::res://level_designs/level_1.tscn<>uid://c7cospx0xchne::::res://player/player.tscn<>uid://b0x0wce4cgu76::::res://Free Pixel Art Forest/Preview/Background.png<>uid://cmlyc6t228otu::::res://level_markers/level_reset/level_reset_area.tscn<>uid://542m08y7pian::::res://level_markers/level_start/level_start.tscn<>uid://d4nls2u54ty2q::::res://level_markers/level_end/level_end.tscn<>uid://4psi25sn7y0w::::res://PauseMenu.tscn
 menu.gd::GDScript::-1::1714093765::0::1::::<>Control<>::
-menu.tscn::PackedScene::9170682104333281848::1714093849::0::1::::<><>::res://menu.gd<>uid://bllt806y6he3s::::res://bg_settings.tscn<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf
+menu.tscn::PackedScene::9170682104333281848::1714094500::0::1::::<><>::res://menu.gd<>uid://bllt806y6he3s::::res://bg_settings.tscn<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf
 MicrosoftTeams-image (1).png::CompressedTexture2D::6014021310914995619::1714093765::1714093829::1::::<><>::
-node_2d.tscn::PackedScene::919907744659301650::1714094015::0::1::::<><>::
+node_2d.tscn::PackedScene::919907744659301650::1714094500::0::1::::<><>::
 noise.mp3::AudioStreamMP3::5332753412040231007::1714093765::1714093829::1::::<><>::
 options.gd::GDScript::-1::1714093765::0::1::::<>Control<>::
 options.tscn::PackedScene::3926661732705015207::1714094426::0::1::::<><>::res://options.gd<>uid://bllt806y6he3s::::res://bg_settings.tscn<>uid://cflks4p1urdv1::::res://volume_slider.tscn<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf<>uid://ch8hw1a3g6vjb::::res://noise.mp3
@@ -36,9 +36,9 @@ PauseMenu.tscn::PackedScene::2067550789345954008::1714093765::0::1::::<><>::res:
 penguin left.png::CompressedTexture2D::7871845800142208814::1714093765::1714093829::1::::<><>::
 penguin right.png::CompressedTexture2D::2275432826778291849::1714093765::1714093829::1::::<><>::
 README.md::TextFile::-1::1714093765::0::1::::<><>::
-Speedrun_timer.tscn::PackedScene::6072490064715817110::1714093765::0::1::::<><>::res://timer.gd<>uid://bmmqy6upjbhqd::::res://8bit16 2.ttf
+Speedrun_timer.tscn::PackedScene::6072490064715817110::1714094500::0::1::::<><>::res://timer.gd<>uid://bmmqy6upjbhqd::::res://8bit16 2.ttf
 Spike.gd::GDScript::-1::1714093765::0::1::::<>Area2D<>::
-spike.tscn::PackedScene::7768756659337852054::1714093765::0::1::::<><>::res://Spike.gd<>uid://cdso40v2rcsrf::::res://_pixel_adventure_1/Free/Traps/Spikes/Idle.png
+spike.tscn::PackedScene::7768756659337852054::1714094500::0::1::::<><>::res://Spike.gd<>uid://cdso40v2rcsrf::::res://_pixel_adventure_1/Free/Traps/Spikes/Idle.png
 spotifydown.com - bee..mp3::AudioStreamMP3::9051558394435195571::1714093765::1714093829::1::::<><>::
 spotifydown.com - カラカラカラのカラ STuPiD DaNCe ReMiX (feat. 初音ミク).mp3::AudioStreamMP3::7099565131420687077::1714093765::1714093829::1::::<><>::
 sr2f2008a7336aws3-1 (dragged).png::CompressedTexture2D::4580132636518118396::1714093765::1714093829::1::::<><>::
@@ -86,9 +86,9 @@ level_reset_area.gd::GDScript::-1::1714093765::0::1::::<>Area2D<>::
 level_reset_area.tscn::PackedScene::5639278084590742954::1714093765::0::1::::<><>::res://level_markers/level_reset/level_reset_area.gd<>uid://ddw42ygg134gg::::res://sound_effects/lose.wav
 ::res://level_markers/level_start/::1714093765
 level_start.tscn::PackedScene::2167194417536369381::1714093765::0::1::::<><>::uid://c0rt6nsa1axrk::::res://_pixel_adventure_1/Free/Items/Checkpoints/Start/Start (Idle).png
-::res://player/::1714093765
+::res://player/::1714094500
 player.gd::GDScript::-1::1714093765::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::7023896126047838778::1714093765::0::1::::<><>::res://player/player.gd<>uid://crxib1q3e8t12::::res://MicrosoftTeams-image (1).png<>uid://dkfgfdw6qnsxq::::res://penguin left.png<>uid://7oibtok7i6h6::::res://penguin right.png<>uid://ysqygoufhpja::::res://win animation.png<>uid://csrta260gebja::::res://Speedrun_timer.tscn<>uid://djpu0b0v20353::::res://jump.mp3
+player.tscn::PackedScene::7023896126047838778::1714094500::0::1::::<><>::res://player/player.gd<>uid://crxib1q3e8t12::::res://MicrosoftTeams-image (1).png<>uid://dkfgfdw6qnsxq::::res://penguin left.png<>uid://7oibtok7i6h6::::res://penguin right.png<>uid://ysqygoufhpja::::res://win animation.png<>uid://csrta260gebja::::res://Speedrun_timer.tscn<>uid://djpu0b0v20353::::res://jump.mp3
 ::res://sound_effects/::1714093830
 lose.wav::AudioStreamWAV::7417055171946096518::1714093765::1714093830::1::::<><>::
 win.wav::AudioStreamWAV::1964398570356764626::1714093765::1714093830::1::::<><>::
