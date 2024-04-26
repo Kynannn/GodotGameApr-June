@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://542m08y7pian"]
+
+[ext_resource type="Texture2D" uid="uid://c0rt6nsa1axrk" path="res://_pixel_adventure_1/Free/Items/Checkpoints/Start/Start (Idle).png" id="1_km60w"]
+
+[node name="LevelStart" type="Sprite2D"]
+texture = ExtResource("1_km60w")

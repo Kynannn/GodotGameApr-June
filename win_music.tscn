@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6pfj8hsifg6j"]
+
+[ext_resource type="AudioStream" uid="uid://cnkbeo1qyaprp" path="res://win music.mp3" id="1_th6uk"]
+
+[node name="win_music" type="AudioStreamPlayer"]
+stream = ExtResource("1_th6uk")
+bus = &"Music"

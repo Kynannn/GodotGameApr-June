@@ -1,0 +1,147 @@
+[gd_scene load_steps=22 format=3 uid="uid://c7cospx0xchne"]
+
+[ext_resource type="Script" path="res://player/player.gd" id="1_jg16v"]
+[ext_resource type="Texture2D" uid="uid://crxib1q3e8t12" path="res://MicrosoftTeams-image (1).png" id="2_58a5r"]
+[ext_resource type="Texture2D" uid="uid://dkfgfdw6qnsxq" path="res://penguin left.png" id="3_55mg3"]
+[ext_resource type="Texture2D" uid="uid://7oibtok7i6h6" path="res://penguin right.png" id="4_gh5vw"]
+[ext_resource type="Texture2D" uid="uid://ysqygoufhpja" path="res://win animation.png" id="5_itmsq"]
+[ext_resource type="PackedScene" uid="uid://csrta260gebja" path="res://Speedrun_timer.tscn" id="6_wde2s"]
+[ext_resource type="AudioStream" uid="uid://djpu0b0v20353" path="res://jump.mp3" id="7_5rc0e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ffy0a"]
+atlas = ExtResource("2_58a5r")
+region = Rect2(0, 0, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6mmp7"]
+atlas = ExtResource("2_58a5r")
+region = Rect2(16, 0, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mvkrk"]
+atlas = ExtResource("3_55mg3")
+region = Rect2(48, 0, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rrwhk"]
+atlas = ExtResource("3_55mg3")
+region = Rect2(32, 0, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v4xkj"]
+atlas = ExtResource("3_55mg3")
+region = Rect2(16, 0, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7l0rl"]
+atlas = ExtResource("3_55mg3")
+region = Rect2(0, 0, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0xlid"]
+atlas = ExtResource("4_gh5vw")
+region = Rect2(0, 0, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qx8by"]
+atlas = ExtResource("4_gh5vw")
+region = Rect2(16, 0, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nlud5"]
+atlas = ExtResource("4_gh5vw")
+region = Rect2(32, 0, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ljuk2"]
+atlas = ExtResource("4_gh5vw")
+region = Rect2(48, 0, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qplua"]
+atlas = ExtResource("5_itmsq")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_il3fv"]
+atlas = ExtResource("5_itmsq")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k4i64"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ffy0a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6mmp7")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mvkrk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rrwhk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v4xkj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7l0rl")
+}],
+"loop": true,
+"name": &"run_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0xlid")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qx8by")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nlud5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ljuk2")
+}],
+"loop": true,
+"name": &"run_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qplua")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_il3fv")
+}],
+"loop": true,
+"name": &"win",
+"speed": 24.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ltuw7"]
+size = Vector2(24, 26)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_jg16v")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-4.76837e-07, -5)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_k4i64")
+animation = &"win"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_ltuw7")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+
+[node name="CanvasLayer" parent="." instance=ExtResource("6_wde2s")]
+
+[node name="jump_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_5rc0e")
+bus = &"Sfx"
+
+[node name="CoyoteTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="CoyoteTimer" to="." method="_on_coyote_timer_timeout"]

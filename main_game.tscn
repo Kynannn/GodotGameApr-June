@@ -1,0 +1,65 @@
+[gd_scene load_steps=10 format=3 uid="uid://dhrovrcjhrr4o"]
+
+[ext_resource type="Script" path="res://main_game.gd" id="1_1cqkd"]
+[ext_resource type="PackedScene" uid="uid://cfojx3gbngwmv" path="res://level_designs/level_1.tscn" id="1_orknh"]
+[ext_resource type="PackedScene" uid="uid://c7cospx0xchne" path="res://player/player.tscn" id="2_5uk8r"]
+[ext_resource type="Texture2D" uid="uid://b0x0wce4cgu76" path="res://Free Pixel Art Forest/Preview/Background.png" id="2_cvu38"]
+[ext_resource type="PackedScene" uid="uid://cmlyc6t228otu" path="res://level_markers/level_reset/level_reset_area.tscn" id="4_tooed"]
+[ext_resource type="PackedScene" uid="uid://542m08y7pian" path="res://level_markers/level_start/level_start.tscn" id="5_0cwpm"]
+[ext_resource type="PackedScene" uid="uid://d4nls2u54ty2q" path="res://level_markers/level_end/level_end.tscn" id="6_8400m"]
+[ext_resource type="PackedScene" uid="uid://4psi25sn7y0w" path="res://PauseMenu.tscn" id="8_gn4f8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ldtb2"]
+size = Vector2(3287, 51)
+
+[node name="MainGame" type="Node2D"]
+script = ExtResource("1_1cqkd")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+z_index = -1
+z_as_relative = false
+offset_left = -204.0
+offset_top = -137.0
+offset_right = 2140.0
+offset_bottom = 656.0
+texture = ExtResource("2_cvu38")
+stretch_mode = 4
+
+[node name="Level1" parent="." instance=ExtResource("1_orknh")]
+
+[node name="Player" parent="." instance=ExtResource("2_5uk8r")]
+z_index = 1
+position = Vector2(24, 133)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("8_gn4f8")]
+
+[node name="LevelResetArea" parent="." instance=ExtResource("4_tooed")]
+position = Vector2(714, 509)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LevelResetArea"]
+position = Vector2(-405.5, 519)
+shape = SubResource("RectangleShape2D_ldtb2")
+
+[node name="LevelStart" parent="." instance=ExtResource("5_0cwpm")]
+position = Vector2(12, 113)
+
+[node name="LevelEnd" parent="." instance=ExtResource("6_8400m")]
+position = Vector2(1688, 64)
+metadata/_edit_group_ = true
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_offset = Vector2(10, 2.08165e-12)
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(793, 2.08165e-12)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(297, -48)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("2_cvu38")
+
+[connection signal="body_entered" from="LevelResetArea" to="." method="_on_level_reset_area_body_entered"]
+[connection signal="body_entered" from="LevelEnd" to="." method="_on_level_end_body_entered"]

@@ -1,0 +1,74 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3wl2alj6r2k7"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_4yon1"]
+[ext_resource type="PackedScene" uid="uid://bllt806y6he3s" path="res://bg_settings.tscn" id="2_uo1c8"]
+[ext_resource type="FontFile" uid="uid://bumelrknnwxkf" path="res://8-bit-hud.ttf" id="3_uol8c"]
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4yon1")
+
+[node name="TextureRect" parent="." instance=ExtResource("2_uo1c8")]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 549.0
+offset_bottom = 303.0
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -68.0
+offset_right = 35.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_uol8c")
+theme_override_font_sizes/font_size = 20
+text = "Play"
+
+[node name="Options" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_uol8c")
+theme_override_font_sizes/font_size = 12
+text = "Options"
+
+[node name="Credits" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_uol8c")
+theme_override_font_sizes/font_size = 12
+text = "Credits"
+
+[node name="How2Play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_uol8c")
+theme_override_font_sizes/font_size = 12
+text = "How2Play
+"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_uol8c")
+text = "Quit"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/How2Play" to="." method="_on_how_2_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

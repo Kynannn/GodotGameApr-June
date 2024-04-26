@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmlyc6t228otu"]
+
+[ext_resource type="Script" path="res://level_markers/level_reset/level_reset_area.gd" id="1_w75su"]
+[ext_resource type="AudioStream" uid="uid://ddw42ygg134gg" path="res://sound_effects/lose.wav" id="1_x6mgw"]
+
+[node name="LevelResetArea" type="Area2D"]
+position = Vector2(160, 269)
+script = ExtResource("1_w75su")
+
+[node name="FailSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_x6mgw")
