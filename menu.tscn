@@ -59,7 +59,7 @@ text = "Credits"
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_uol8c")
 theme_override_font_sizes/font_size = 12
-text = "How2Play
+text = "How to Play
 "
 
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
