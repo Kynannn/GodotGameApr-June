@@ -1,1 +1,6 @@
-res://options.tscn
+res://menu.tscn
+res://node_2d.tscn
+res://spike.tscn
+res://player/player.tscn
+res://Speedrun_timer.tscn
+res://creds.tscn

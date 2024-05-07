@@ -122,10 +122,10 @@ size = Vector2(24, 26)
 script = ExtResource("1_jg16v")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-4.76837e-07, -5)
+position = Vector2(-4.76837e-07, -2)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_k4i64")
-animation = &"win"
+animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
