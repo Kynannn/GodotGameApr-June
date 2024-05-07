@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6ga3170xju08"]
+
+[ext_resource type="VideoStream" path="res://8082B541-2263-42E4-9DB5-5B2080700FBE.ogv" id="1_ipp5k"]
+[ext_resource type="Script" path="res://cutscene_opening.gd" id="2_wm88k"]
+
+[node name="CutsceneOpening" type="VideoStreamPlayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 110.0
+offset_top = 23.0
+offset_right = 878.0
+offset_bottom = 1703.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.1, 0.1)
+stream = ExtResource("1_ipp5k")
+volume_db = 6.93
+autoplay = true
+script = ExtResource("2_wm88k")
