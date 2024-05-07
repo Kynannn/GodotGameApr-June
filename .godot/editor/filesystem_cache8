@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714106973
+::res://::1715051410
 8-bit-hud.ttf::FontFile::3815233510160406869::1713337196::1714093254::1::::<><>::
 8bit16 2.ttf::FontFile::3254475331149737015::1713337515::1714093254::1::::<><>::
 Actor.gd::GDScript::-1::1714041935::0::1::::Actor<>CharacterBody2D<>::
@@ -30,7 +30,7 @@ MicrosoftTeams-image (1).png::CompressedTexture2D::6014021310914995619::17128849
 node_2d.tscn::PackedScene::919907744659301650::1714094087::0::1::::<><>::
 noise.mp3::AudioStreamMP3::5332753412040231007::1714036020::1714093254::1::::<><>::
 options.gd::GDScript::-1::1714016401::0::1::::<>Control<>::
-options.tscn::PackedScene::3926661732705015207::1714094950::0::1::::<><>::res://options.gd<>uid://bllt806y6he3s::::res://bg_settings.tscn<>uid://cflks4p1urdv1::::res://volume_slider.tscn<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf<>uid://ch8hw1a3g6vjb::::res://noise.mp3
+options.tscn::PackedScene::3926661732705015207::1714114580::0::1::::<><>::res://options.gd<>uid://bllt806y6he3s::::res://bg_settings.tscn<>uid://cflks4p1urdv1::::res://volume_slider.tscn<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf<>uid://ch8hw1a3g6vjb::::res://noise.mp3
 PauseMenu.gdshader::Shader::-1::1714091984::0::1::::<><>::
 PauseMenu.tscn::PackedScene::2067550789345954008::1714091661::0::1::::<><>::res://PauseMenu.gdshader
 penguin left.png::CompressedTexture2D::7871845800142208814::1712884294::1714093255::1::::<><>::

@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Y9 Godot Modification Group Project"
+config/name="Y9GameDevApril-June"
 run/main_scene="res://menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
