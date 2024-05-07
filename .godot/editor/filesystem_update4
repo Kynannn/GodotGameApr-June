@@ -1,5 +1,7 @@
 res://menu.tscn
-res://options.tscn
+res://node_2d.tscn
+res://spike.tscn
 res://player/player.tscn
-res://actor.tscn
-res://main_game.tscn
+res://Speedrun_timer.tscn
+res://creds.tscn
+res://level_markers/enemy.tscn
