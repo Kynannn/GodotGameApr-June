@@ -1,3 +1,5 @@
 res://menu.tscn
 res://options.tscn
 res://player/player.tscn
+res://actor.tscn
+res://main_game.tscn
