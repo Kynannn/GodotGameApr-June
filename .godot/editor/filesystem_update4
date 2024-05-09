@@ -1,10 +1,8 @@
 res://menu.tscn
 res://options.tscn
-res://player/player.tscn
 res://actor.tscn
 res://main_game.tscn
 res://cutscene_opening.tscn
+res://player/player.tscn
 res://bg_music.tscn
-res://bg_music.gd
-res://main_game.gd
-res://cutscene_opening.gd
+res://bg_settings.tscn
