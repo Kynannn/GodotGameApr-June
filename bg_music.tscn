@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://cr4d28f15k2y6"]
+[gd_scene load_steps=3 format=3 uid="uid://cr4d28f15k2y6"]
 
 [ext_resource type="AudioStream" uid="uid://d17v3yav816qx" path="res://spotifydown.com - bee..mp3" id="1_b0r3v"]
+[ext_resource type="Script" path="res://bg_music.gd" id="2_1hlx3"]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer"]
 stream = ExtResource("1_b0r3v")
 autoplay = true
 bus = &"Music"
+script = ExtResource("2_1hlx3")
