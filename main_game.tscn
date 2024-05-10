@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://4psi25sn7y0w" path="res://PauseMenu.tscn" id="8_gn4f8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ldtb2"]
-size = Vector2(3287, 51)
+size = Vector2(4224, 51)
 
 [node name="MainGame" type="Node2D"]
 script = ExtResource("1_1cqkd")
@@ -40,7 +40,7 @@ position = Vector2(24, 133)
 position = Vector2(714, 509)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LevelResetArea"]
-position = Vector2(-405.5, 519)
+position = Vector2(63, 519)
 shape = SubResource("RectangleShape2D_ldtb2")
 
 [node name="LevelStart" parent="." instance=ExtResource("5_0cwpm")]

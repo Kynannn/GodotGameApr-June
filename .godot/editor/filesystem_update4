@@ -1,5 +1,3 @@
-res://cutscene_opening.tscn
-res://cutscene_opening.gd
 res://menu.tscn
 res://node_2d.tscn
 res://spike.tscn
@@ -8,3 +6,9 @@ res://Speedrun_timer.tscn
 res://creds.tscn
 res://level_markers/enemy.tscn
 res://level_markers/level_2.tscn
+res://level_menu.tscn
+res://level_menu.gd
+res://level_designs/level_1.tscn
+res://main_game.tscn
+res://main_game2.tscn
+res://level_markers/level_end/level_end.tscn
