@@ -1,16 +1,17 @@
-res://menu.tscn
-res://node_2d.tscn
-res://spike.tscn
-res://player/player.tscn
-res://Speedrun_timer.tscn
-res://creds.tscn
+res://PauseMenu.tscn
 res://level_markers/enemy.tscn
 res://level_markers/level_2.tscn
-res://level_menu.tscn
-res://level_menu.gd
-res://level_designs/level_1.tscn
-res://main_game.tscn
+res://cutscene_opening.tscn
+res://Speedrun_timer.tscn
 res://main_game2.tscn
+<<<<<<< HEAD
 res://level_markers/level_end/level_end.tscn
 res://level_designs/level_2.tscn
 res://level_markers/level_end/level_end.gd
+=======
+res://main_game.tscn
+res://main_game.gd
+res://menu.gd
+res://menu.tscn
+res://Global.gd
+>>>>>>> bf8c912532101c4c21beb50d4381cb29f7a7422b
