@@ -13,7 +13,7 @@ func play_level_complete_sound():
 
 
 func _on_win_music_finished():
-	get_tree().quit()
+	get_tree().change_scene_to_file("res://level_designs/level_2.tscn")
 
 
 func _on_body_entered(body):

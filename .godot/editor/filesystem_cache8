@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1715302511
+::res://::1715302619
 8-bit-hud.ttf::FontFile::3815233510160406869::1714093765::1714093829::1::::<><>::
 8bit16 2.ttf::FontFile::3254475331149737015::1714093765::1714093829::1::::<><>::
 8082B541-2263-42E4-9DB5-5B2080700FBE.ogv::VideoStreamTheora::-1::1715223699::0::1::::<><>::
@@ -11,7 +11,7 @@ bg_music.gd::GDScript::-1::1715223699::0::1::::<>AudioStreamPlayer<>::
 bg_music.tscn::PackedScene::6026150773730630763::1715223699::0::1::::<><>::uid://d17v3yav816qx::::res://spotifydown.com - bee..mp3<>res://bg_music.gd
 bg_settings.tscn::PackedScene::3182420035172387010::1714093765::0::1::::<><>::uid://c60c10cy5xaj1::::res://Background copy.png
 Creds.gd::GDScript::-1::1714093765::0::1::::<>Control<>::
-creds.tscn::PackedScene::2425512614425309974::1715302298::0::1::::<><>::res://Creds.gd<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf<>uid://bllt806y6he3s::::res://bg_settings.tscn<>uid://bmmqy6upjbhqd::::res://8bit16 2.ttf
+creds.tscn::PackedScene::2425512614425309974::1715302559::0::1::::<><>::res://Creds.gd<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf<>uid://bllt806y6he3s::::res://bg_settings.tscn<>uid://bmmqy6upjbhqd::::res://8bit16 2.ttf
 cutscene_opening.gd::GDScript::-1::1715302238::0::1::::<>VideoStreamPlayer<>::
 cutscene_opening.tscn::PackedScene::4574712521433644827::1715302238::0::1::::<><>::res://cutscenes/opening-cutscene.ogv<>res://cutscene_opening.gd<>uid://bp5o0kq2djrdk::::res://cutscenes/opening cutscene audio.mp3<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf
 default_bus_layout.tres::AudioBusLayout::141029935399039321::1714093765::0::1::::<><>::
@@ -26,16 +26,17 @@ icon.svg::CompressedTexture2D::3886478729124040478::1714093765::1714093829::1:::
 Idle.png::CompressedTexture2D::4075279300425779227::1714093765::1714093829::1::::<><>::
 IMG_7792.jpg::CompressedTexture2D::1809343923638424853::1714093765::1714093830::1::::<><>::
 jump.mp3::AudioStreamMP3::7823186386970144480::1714093765::1714093829::1::::<><>::
-layer_1.png::CompressedTexture2D::414098433302992415::1715302511::1715302511::1::::<><>::
+layer_1.png::CompressedTexture2D::414098433302992415::1715302544::1715302511::1::::<><>::
 level_menu.gd::GDScript::-1::1715301872::0::1::::<>Control<>::
-level_menu.tscn::PackedScene::6334978653688796728::1715302298::0::1::::<><>::res://level_menu.gd
-main_game2.tscn::PackedScene::3562561292658689015::1715302443::0::1::::<><>::res://main_game.gd<>uid://b0x0wce4cgu76::::res://Free Pixel Art Forest/Preview/Background.png<>uid://cfojx3gbngwmv::::res://level_designs/level_1.tscn<>uid://c7cospx0xchne::::res://player/player.tscn<>uid://4psi25sn7y0w::::res://PauseMenu.tscn<>uid://cmlyc6t228otu::::res://level_markers/level_reset/level_reset_area.tscn<>uid://542m08y7pian::::res://level_markers/level_start/level_start.tscn<>uid://d4nls2u54ty2q::::res://level_markers/level_end/level_end.tscn
+level_menu.tscn::PackedScene::6334978653688796728::1715302559::0::1::::<><>::res://level_menu.gd
+main_game2.gd::GDScript::-1::1715302590::0::1::::<>Node2D<>::
+main_game2.tscn::PackedScene::3562561292658689015::1715302619::0::1::::<><>::res://main_game2.gd<>uid://b0x0wce4cgu76::::res://Free Pixel Art Forest/Preview/Background.png<>uid://f5ue1v6cxo04::::res://layer_1.png<>uid://c7cospx0xchne::::res://player/player.tscn<>uid://4psi25sn7y0w::::res://PauseMenu.tscn<>uid://cmlyc6t228otu::::res://level_markers/level_reset/level_reset_area.tscn<>uid://542m08y7pian::::res://level_markers/level_start/level_start.tscn<>uid://d4nls2u54ty2q::::res://level_markers/level_end/level_end.tscn
 main_game.gd::GDScript::-1::1715223699::0::1::::<>Node2D<>::
 main_game.tscn::PackedScene::7686566814340802628::1715302471::0::1::::<><>::res://main_game.gd<>uid://cfojx3gbngwmv::::res://level_designs/level_1.tscn<>uid://c7cospx0xchne::::res://player/player.tscn<>uid://b0x0wce4cgu76::::res://Free Pixel Art Forest/Preview/Background.png<>uid://cmlyc6t228otu::::res://level_markers/level_reset/level_reset_area.tscn<>uid://542m08y7pian::::res://level_markers/level_start/level_start.tscn<>uid://d4nls2u54ty2q::::res://level_markers/level_end/level_end.tscn<>uid://4psi25sn7y0w::::res://PauseMenu.tscn
 menu.gd::GDScript::-1::1715230272::0::1::::<>Control<>::
-menu.tscn::PackedScene::9170682104333281848::1715302298::0::1::::<><>::res://menu.gd<>uid://bllt806y6he3s::::res://bg_settings.tscn<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf
+menu.tscn::PackedScene::9170682104333281848::1715302559::0::1::::<><>::res://menu.gd<>uid://bllt806y6he3s::::res://bg_settings.tscn<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf
 MicrosoftTeams-image (1).png::CompressedTexture2D::6014021310914995619::1714093765::1714093829::1::::<><>::
-node_2d.tscn::PackedScene::919907744659301650::1715302298::0::1::::<><>::
+node_2d.tscn::PackedScene::919907744659301650::1715302559::0::1::::<><>::
 noise.mp3::AudioStreamMP3::5332753412040231007::1714093765::1714093829::1::::<><>::
 options.gd::GDScript::-1::1714093765::0::1::::<>Control<>::
 options.tscn::PackedScene::3926661732705015207::1715051928::0::1::::<><>::res://options.gd<>uid://bllt806y6he3s::::res://bg_settings.tscn<>uid://cflks4p1urdv1::::res://volume_slider.tscn<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf<>uid://ch8hw1a3g6vjb::::res://noise.mp3
@@ -44,7 +45,7 @@ PauseMenu.tscn::PackedScene::2067550789345954008::1714093765::0::1::::<><>::res:
 penguin left.png::CompressedTexture2D::7871845800142208814::1714093765::1714093829::1::::<><>::
 penguin right.png::CompressedTexture2D::2275432826778291849::1714093765::1714093829::1::::<><>::
 README.md::TextFile::-1::1714093765::0::1::::<><>::
-Speedrun_timer.tscn::PackedScene::6072490064715817110::1715302298::0::1::::<><>::res://timer.gd<>uid://bmmqy6upjbhqd::::res://8bit16 2.ttf
+Speedrun_timer.tscn::PackedScene::6072490064715817110::1715302559::0::1::::<><>::res://timer.gd<>uid://bmmqy6upjbhqd::::res://8bit16 2.ttf
 Spike.gd::GDScript::-1::1714093765::0::1::::<>Area2D<>::
 spike.tscn::PackedScene::7768756659337852054::1715302298::0::1::::<><>::res://Spike.gd<>uid://cdso40v2rcsrf::::res://_pixel_adventure_1/Free/Traps/Spikes/Idle.png
 spotifydown.com - bee..mp3::AudioStreamMP3::9051558394435195571::1714093765::1714093829::1::::<><>::
@@ -86,22 +87,186 @@ Pixel Art Forest.png::CompressedTexture2D::4638423396435942071::1714093765::1714
 Pixel Art Plataformer Painted Style.png::CompressedTexture2D::2427758055415586162::1714093765::1714093830::1::::<><>::
 Pixel Art Runner.png::CompressedTexture2D::4504484264795850647::1714093765::1714093830::1::::<><>::
 Pixel Art Snowy Forest.png::CompressedTexture2D::1843196401795371844::1714093765::1714093830::1::::<><>::
-::res://level_designs/::1715302298
+::res://level_designs/::1715302955
 level_1.tscn::PackedScene::5153275880313611685::1715302298::0::1::::<><>::uid://c76gur0v4bv0e::::res://_pixel_adventure_1/Free/Terrain/Terrain (16x16).png<>uid://dixij07esi4ra::::res://spike.tscn<>uid://nampiiwgg3p6::::res://enemy.tscn
-::res://level_markers/::1715302298
+level_2.tscn::PackedScene::6046631372017584003::1715302799::0::1::::<><>::uid://c76gur0v4bv0e::::res://_pixel_adventure_1/Free/Terrain/Terrain (16x16).png<>uid://nampiiwgg3p6::::res://enemy.tscn
+::res://level_designs/Tiles/::1715302989
+arch_1.png::CompressedTexture2D::4454023016106795370::1715302989::1715302955::1::::<><>::
+arch_2.png::CompressedTexture2D::6626380950947840473::1715302989::1715302955::1::::<><>::
+arch_3.png::CompressedTexture2D::5152384343041545919::1715302989::1715302955::1::::<><>::
+arch_4.png::CompressedTexture2D::8998076273806535449::1715302989::1715302955::1::::<><>::
+arch_5.png::CompressedTexture2D::8442846213085736869::1715302989::1715302955::1::::<><>::
+arch_6.png::CompressedTexture2D::7809795353182194120::1715302989::1715302955::1::::<><>::
+arch_7.png::CompressedTexture2D::3152320986877669885::1715302989::1715302955::1::::<><>::
+blank.png::CompressedTexture2D::3439304304415513759::1715302989::1715302955::1::::<><>::
+brick_1.png::CompressedTexture2D::8426921635760475463::1715302989::1715302955::1::::<><>::
+brick_2.png::CompressedTexture2D::8809582128730955001::1715302989::1715302955::1::::<><>::
+brick_3.png::CompressedTexture2D::2135190098735098495::1715302989::1715302955::1::::<><>::
+brick_4.png::CompressedTexture2D::102148412583407261::1715302989::1715302955::1::::<><>::
+brick_5.png::CompressedTexture2D::1664356889742199485::1715302989::1715302955::1::::<><>::
+brick_6.png::CompressedTexture2D::3312157220424785424::1715302989::1715302955::1::::<><>::
+brick_7.png::CompressedTexture2D::600579457534746954::1715302989::1715302955::1::::<><>::
+brick_8.png::CompressedTexture2D::9212699999091392257::1715302989::1715302955::1::::<><>::
+brick_9.png::CompressedTexture2D::3012392721051452061::1715302989::1715302955::1::::<><>::
+brick_10.png::CompressedTexture2D::4998411794489826291::1715302989::1715302955::1::::<><>::
+brick_11.png::CompressedTexture2D::6315159459487767189::1715302989::1715302955::1::::<><>::
+brick_12.png::CompressedTexture2D::781630366415290675::1715302989::1715302955::1::::<><>::
+brick_13.png::CompressedTexture2D::6630333089369810919::1715302989::1715302955::1::::<><>::
+brick_14.png::CompressedTexture2D::2835544294441954004::1715302989::1715302955::1::::<><>::
+brick_15.png::CompressedTexture2D::3199105096822112371::1715302989::1715302955::1::::<><>::
+brick_16.png::CompressedTexture2D::3038770027288880161::1715302989::1715302955::1::::<><>::
+brick_side_left_1.png::CompressedTexture2D::5680542446028223817::1715302989::1715302955::1::::<><>::
+brick_side_left_2.png::CompressedTexture2D::5311102972854942424::1715302989::1715302955::1::::<><>::
+brick_side_right_1.png::CompressedTexture2D::1776514050199944106::1715302989::1715302955::1::::<><>::
+brick_side_right_2.png::CompressedTexture2D::965976579683617124::1715302989::1715302955::1::::<><>::
+ceiling_1.png::CompressedTexture2D::6539892831181026051::1715302989::1715302955::1::::<><>::
+ceiling_2.png::CompressedTexture2D::2874935381219829739::1715302989::1715302955::1::::<><>::
+ceiling_3.png::CompressedTexture2D::8125018770081979891::1715302989::1715302955::1::::<><>::
+ceiling_4.png::CompressedTexture2D::7766278508240529962::1715302989::1715302955::1::::<><>::
+ceiling_corner_left.png::CompressedTexture2D::8341183567037788991::1715302989::1715302955::1::::<><>::
+ceiling_corner_right.png::CompressedTexture2D::3348290362764396004::1715302989::1715302955::1::::<><>::
+ceiling_transparent_1.png::CompressedTexture2D::1413639324636590555::1715302989::1715302955::1::::<><>::
+ceiling_transparent_2.png::CompressedTexture2D::6114321265520499587::1715302989::1715302955::1::::<><>::
+column_1.png::CompressedTexture2D::2030929025995175145::1715302989::1715302955::1::::<><>::
+column_2.png::CompressedTexture2D::3313644145525346699::1715302989::1715302955::1::::<><>::
+column_3.png::CompressedTexture2D::5568902986381651375::1715302989::1715302955::1::::<><>::
+column_4.png::CompressedTexture2D::6653258627047440523::1715302989::1715302955::1::::<><>::
+column_5.png::CompressedTexture2D::8011656401433717512::1715302989::1715302955::1::::<><>::
+column_6.png::CompressedTexture2D::8989111066446034044::1715302989::1715302955::1::::<><>::
+column_7.png::CompressedTexture2D::91455841240974203::1715302989::1715302955::1::::<><>::
+column_8.png::CompressedTexture2D::8875944580698030875::1715302989::1715302955::1::::<><>::
+damaged_brick_1.png::CompressedTexture2D::1681823393762776897::1715302989::1715302955::1::::<><>::
+damaged_brick_2.png::CompressedTexture2D::8269104625570687662::1715302989::1715302955::1::::<><>::
+damaged_brick_3.png::CompressedTexture2D::4794858225830956548::1715302989::1715302955::1::::<><>::
+damaged_brick_4.png::CompressedTexture2D::1082814659539905368::1715302989::1715302955::1::::<><>::
+floor_tile_1.png::CompressedTexture2D::8227342069545886117::1715302989::1715302955::1::::<><>::
+floor_tile_2.png::CompressedTexture2D::3251469554403535748::1715302989::1715302955::1::::<><>::
+floor_tile_3.png::CompressedTexture2D::5717385474950988976::1715302989::1715302955::1::::<><>::
+floor_tile_4.png::CompressedTexture2D::3901845657896162887::1715302989::1715302955::1::::<><>::
+floor_tile_carpet_1.png::CompressedTexture2D::6223938988854619844::1715302989::1715302955::1::::<><>::
+floor_tile_carpet_2.png::CompressedTexture2D::5423811064758017437::1715302989::1715302955::1::::<><>::
+floor_tile_carpet_3.png::CompressedTexture2D::8969637683023127::1715302989::1715302955::1::::<><>::
+floor_tile_carpet_4.png::CompressedTexture2D::6549646139660300406::1715302989::1715302955::1::::<><>::
+floor_tile_carpet_corner_left.png::CompressedTexture2D::7415030081633401734::1715302989::1715302955::1::::<><>::
+floor_tile_carpet_corner_right.png::CompressedTexture2D::277929719985452347::1715302989::1715302955::1::::<><>::
+floor_tile_carpet_transition_1.png::CompressedTexture2D::4454758386794400188::1715302989::1715302955::1::::<><>::
+floor_tile_carpet_transition_2.png::CompressedTexture2D::7701767746557847118::1715302989::1715302955::1::::<><>::
+floor_tile_corner_left.png::CompressedTexture2D::1327374544024178646::1715302989::1715302955::1::::<><>::
+floor_tile_corner_right.png::CompressedTexture2D::8071453505528663347::1715302989::1715302955::1::::<><>::
+floor_tile_wood_carpet_transition_1.png::CompressedTexture2D::3967039000877465327::1715302989::1715302955::1::::<><>::
+floor_tile_wood_carpet_transition_2.png::CompressedTexture2D::5246662517840807482::1715302989::1715302955::1::::<><>::
+floor_tile_wood_transition_1.png::CompressedTexture2D::6666428239663613934::1715302989::1715302955::1::::<><>::
+floor_tile_wood_transition_2.png::CompressedTexture2D::5272752555332001658::1715302989::1715302955::1::::<><>::
+floor_wood_1.png::CompressedTexture2D::2226312235192242537::1715302989::1715302955::1::::<><>::
+floor_wood_2.png::CompressedTexture2D::498189615537250262::1715302989::1715302955::1::::<><>::
+floor_wood_3.png::CompressedTexture2D::5276344497544406587::1715302989::1715302955::1::::<><>::
+floor_wood_4.png::CompressedTexture2D::483870508493372053::1715302989::1715302955::1::::<><>::
+floor_wood_carpet_1.png::CompressedTexture2D::4550533396426970212::1715302989::1715302955::1::::<><>::
+floor_wood_carpet_2.png::CompressedTexture2D::3155387975432364672::1715302989::1715302955::1::::<><>::
+floor_wood_carpet_3.png::CompressedTexture2D::8398296599400117095::1715302989::1715302955::1::::<><>::
+floor_wood_carpet_4.png::CompressedTexture2D::7191346543940695192::1715302989::1715302955::1::::<><>::
+floor_wood_carpet_corner_left.png::CompressedTexture2D::4674145835227459296::1715302989::1715302955::1::::<><>::
+floor_wood_carpet_corner_right.png::CompressedTexture2D::4425219631874586518::1715302989::1715302955::1::::<><>::
+floor_wood_carpet_transition_1.png::CompressedTexture2D::8573815747665174235::1715302989::1715302955::1::::<><>::
+floor_wood_carpet_transition_2.png::CompressedTexture2D::7958423347938628129::1715302989::1715302955::1::::<><>::
+floor_wood_corner_left.png::CompressedTexture2D::7403654303928734692::1715302989::1715302955::1::::<><>::
+floor_wood_corner_right.png::CompressedTexture2D::643396146873196310::1715302989::1715302955::1::::<><>::
+lion_column_1.png::CompressedTexture2D::716688713461725855::1715302989::1715302955::1::::<><>::
+lion_column_2.png::CompressedTexture2D::3417350230537314403::1715302989::1715302955::1::::<><>::
+lion_column_3.png::CompressedTexture2D::5452396381986481305::1715302989::1715302955::1::::<><>::
+lion_column_4.png::CompressedTexture2D::6028082381299806128::1715302989::1715302955::1::::<><>::
+lion_column_5.png::CompressedTexture2D::2602268721121616410::1715302989::1715302955::1::::<><>::
+lion_column_6.png::CompressedTexture2D::4069888810637953520::1715302989::1715302955::1::::<><>::
+lion_column_7.png::CompressedTexture2D::8717344606364570852::1715302989::1715302955::1::::<><>::
+lion_column_8.png::CompressedTexture2D::5907712677107496383::1715302989::1715302955::1::::<><>::
+lion_column_9.png::CompressedTexture2D::2269103930536118547::1715302989::1715302955::1::::<><>::
+lion_column_10.png::CompressedTexture2D::1319985061025638916::1715302989::1715302955::1::::<><>::
+lion_column_11.png::CompressedTexture2D::5218104789998642655::1715302989::1715302955::1::::<><>::
+lion_column_12.png::CompressedTexture2D::3305312317286595125::1715302989::1715302955::1::::<><>::
+merlons_1.png::CompressedTexture2D::4052728153920602837::1715302989::1715302955::1::::<><>::
+merlons_2.png::CompressedTexture2D::1613171114471886293::1715302989::1715302955::1::::<><>::
+merlons_3.png::CompressedTexture2D::2838674216855402696::1715302989::1715302955::1::::<><>::
+merlons_4.png::CompressedTexture2D::6677766753150953354::1715302989::1715302955::1::::<><>::
+merlons_5.png::CompressedTexture2D::2166328482456326062::1715302989::1715302955::1::::<><>::
+platform_1.png::CompressedTexture2D::7881352775457823728::1715302989::1715302955::1::::<><>::
+platform_2.png::CompressedTexture2D::996590272738775423::1715302989::1715302955::1::::<><>::
+platform_3.png::CompressedTexture2D::8867736132005100155::1715302989::1715302955::1::::<><>::
+platform_4.png::CompressedTexture2D::4124981398112172430::1715302989::1715302955::1::::<><>::
+platform_shadow.png::CompressedTexture2D::4902330169826595971::1715302989::1715302955::1::::<><>::
+platform_wall_connection_left.png::CompressedTexture2D::1562950928507210504::1715302989::1715302955::1::::<><>::
+platform_wall_connection_right.png::CompressedTexture2D::8194133351732855674::1715302989::1715302955::1::::<><>::
+spikes.png::CompressedTexture2D::327658700157281233::1715302989::1715302955::1::::<><>::
+stairs_tile_1.png::CompressedTexture2D::6279226224369717141::1715302989::1715302955::1::::<><>::
+stairs_tile_2.png::CompressedTexture2D::7982187332737355217::1715302989::1715302955::1::::<><>::
+stairs_tile_3.png::CompressedTexture2D::8537832065569252061::1715302989::1715302955::1::::<><>::
+stairs_tile_4.png::CompressedTexture2D::5857369134579805250::1715302989::1715302955::1::::<><>::
+stairs_tile_carpet_1.png::CompressedTexture2D::1899665113455703035::1715302989::1715302955::1::::<><>::
+stairs_tile_carpet_2.png::CompressedTexture2D::1943104751899854210::1715302989::1715302955::1::::<><>::
+stairs_tile_carpet_3.png::CompressedTexture2D::4325196191334770926::1715302989::1715302955::1::::<><>::
+stairs_tile_carpet_4.png::CompressedTexture2D::8541610869854375220::1715302989::1715302955::1::::<><>::
+stairs_wood_1.png::CompressedTexture2D::3065360845754022421::1715302989::1715302955::1::::<><>::
+stairs_wood_2.png::CompressedTexture2D::4603756808304976038::1715302989::1715302955::1::::<><>::
+stairs_wood_3.png::CompressedTexture2D::7429143538272115112::1715302989::1715302955::1::::<><>::
+stairs_wood_4.png::CompressedTexture2D::7487779776589906060::1715302989::1715302955::1::::<><>::
+stairs_wood_carpet_1.png::CompressedTexture2D::1916171367173551703::1715302989::1715302955::1::::<><>::
+stairs_wood_carpet_2.png::CompressedTexture2D::5381550849340468934::1715302989::1715302955::1::::<><>::
+stairs_wood_carpet_3.png::CompressedTexture2D::2601750086757795507::1715302989::1715302955::1::::<><>::
+stairs_wood_carpet_4.png::CompressedTexture2D::1103344039326963037::1715302989::1715302955::1::::<><>::
+tile_side_left.png::CompressedTexture2D::1056920523097547431::1715302989::1715302955::1::::<><>::
+tile_side_right.png::CompressedTexture2D::7402529202457598876::1715302989::1715302955::1::::<><>::
+wall_1.png::CompressedTexture2D::1517446420794554203::1715302989::1715302955::1::::<><>::
+wall_2.png::CompressedTexture2D::7192936502749556942::1715302989::1715302955::1::::<><>::
+wall_3.png::CompressedTexture2D::4238219775951892833::1715302989::1715302955::1::::<><>::
+wall_4.png::CompressedTexture2D::4832240124154101499::1715302989::1715302955::1::::<><>::
+wall_5.png::CompressedTexture2D::8704794542364365637::1715302989::1715302955::1::::<><>::
+wall_6.png::CompressedTexture2D::8341289349458919024::1715302989::1715302955::1::::<><>::
+wall_7.png::CompressedTexture2D::49428020024072944::1715302989::1715302955::1::::<><>::
+wall_8.png::CompressedTexture2D::3371694383257812869::1715302989::1715302955::1::::<><>::
+wall_9.png::CompressedTexture2D::6976578177512041520::1715302989::1715302955::1::::<><>::
+wall_10.png::CompressedTexture2D::8874605835443390442::1715302989::1715302955::1::::<><>::
+wall_11.png::CompressedTexture2D::4873755863514905476::1715302989::1715302955::1::::<><>::
+wall_12.png::CompressedTexture2D::5977489808024987473::1715302989::1715302955::1::::<><>::
+wall_13.png::CompressedTexture2D::3203234506258720934::1715302989::1715302955::1::::<><>::
+wall_14.png::CompressedTexture2D::295169106834928672::1715302989::1715302955::1::::<><>::
+wall_15.png::CompressedTexture2D::713388812160489844::1715302989::1715302955::1::::<><>::
+wall_16.png::CompressedTexture2D::6154870366597197063::1715302989::1715302955::1::::<><>::
+wall_17.png::CompressedTexture2D::1909008398857737859::1715302989::1715302955::1::::<><>::
+wall_18.png::CompressedTexture2D::1337204515037869228::1715302989::1715302955::1::::<><>::
+window_big_1.png::CompressedTexture2D::8904988021050961164::1715302989::1715302955::1::::<><>::
+window_big_2.png::CompressedTexture2D::3225650200738671771::1715302989::1715302955::1::::<><>::
+window_big_3.png::CompressedTexture2D::5429482249425008816::1715302989::1715302955::1::::<><>::
+window_big_4.png::CompressedTexture2D::595448743780505075::1715302989::1715302955::1::::<><>::
+window_big_5.png::CompressedTexture2D::4635334611571723100::1715302989::1715302955::1::::<><>::
+window_big_6.png::CompressedTexture2D::2779611985594894252::1715302989::1715302955::1::::<><>::
+window_glass_1.png::CompressedTexture2D::9036641879429171057::1715302989::1715302955::1::::<><>::
+window_glass_2.png::CompressedTexture2D::5650138199185500566::1715302989::1715302955::1::::<><>::
+window_glass_tall_1.png::CompressedTexture2D::8636969971015843742::1715302989::1715302955::1::::<><>::
+window_glass_tall_2.png::CompressedTexture2D::7085507722309347614::1715302989::1715302955::1::::<><>::
+window_glass_tall_3.png::CompressedTexture2D::5769778388042431447::1715302989::1715302955::1::::<><>::
+window_small_1.png::CompressedTexture2D::1724238035924821304::1715302989::1715302955::1::::<><>::
+window_small_2.png::CompressedTexture2D::8730352153211795282::1715302989::1715302955::1::::<><>::
+window_tall_1.png::CompressedTexture2D::5829110864577882854::1715302989::1715302955::1::::<><>::
+window_tall_2.png::CompressedTexture2D::8038196034080822324::1715302989::1715302955::1::::<><>::
+window_tall_3.png::CompressedTexture2D::7948025960846273488::1715302989::1715302955::1::::<><>::
+::res://level_markers/::1715303897
 enemy.tscn::PackedScene::9210781614792373773::1715302298::0::1::::<><>::
-level_2.tscn::PackedScene::9164257600697183560::1715302298::0::1::::<><>::
-::res://level_markers/level_end/::1714093765
+Mossy - BackgroundDecoration.png::CompressedTexture2D::5672034476590030765::1715303897::1715303901::1::::<><>::
+Mossy - Decorations&Hazards.png::CompressedTexture2D::992482623705662510::1715303897::1715303901::1::::<><>::
+Mossy - FloatingPlatforms.png::CompressedTexture2D::7639872518901426886::1715303897::1715303899::1::::<><>::
+Mossy - Hanging Plants.png::CompressedTexture2D::6930630126915063734::1715303897::1715303899::1::::<><>::
+Mossy - MossyHills.png::CompressedTexture2D::5479135040196830875::1715303897::1715303899::1::::<><>::
+Mossy - TileSet.png::CompressedTexture2D::4605968412172639972::1715303897::1715303900::1::::<><>::
+::res://level_markers/level_end/::1715302559
 level_end.gd::GDScript::-1::1714093765::0::1::::<>Area2D<>::
-level_end.tscn::PackedScene::9222276909024872750::1714093765::0::1::::<><>::uid://bgtllixtlsdoe::::res://_pixel_adventure_1/Free/Items/Checkpoints/End/End (Idle).png<>res://level_markers/level_end/level_end.gd<>uid://b6pfj8hsifg6j::::res://win_music.tscn<>uid://28tmfhjm4rd7::::res://sound_effects/win.wav
+level_end.tscn::PackedScene::9222276909024872750::1715302559::0::1::::<><>::uid://bgtllixtlsdoe::::res://_pixel_adventure_1/Free/Items/Checkpoints/End/End (Idle).png<>res://level_markers/level_end/level_end.gd<>uid://b6pfj8hsifg6j::::res://win_music.tscn<>uid://28tmfhjm4rd7::::res://sound_effects/win.wav
 ::res://level_markers/level_reset/::1714093765
 level_reset_area.gd::GDScript::-1::1714093765::0::1::::<>Area2D<>::
 level_reset_area.tscn::PackedScene::5639278084590742954::1714093765::0::1::::<><>::res://level_markers/level_reset/level_reset_area.gd<>uid://ddw42ygg134gg::::res://sound_effects/lose.wav
 ::res://level_markers/level_start/::1714093765
 level_start.tscn::PackedScene::2167194417536369381::1714093765::0::1::::<><>::uid://c0rt6nsa1axrk::::res://_pixel_adventure_1/Free/Items/Checkpoints/Start/Start (Idle).png
-::res://player/::1715302298
+::res://player/::1715302559
 player.gd::GDScript::-1::1714093765::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::7023896126047838778::1715302298::0::1::::<><>::res://player/player.gd<>uid://crxib1q3e8t12::::res://MicrosoftTeams-image (1).png<>uid://dkfgfdw6qnsxq::::res://penguin left.png<>uid://7oibtok7i6h6::::res://penguin right.png<>uid://ysqygoufhpja::::res://win animation.png<>uid://csrta260gebja::::res://Speedrun_timer.tscn<>uid://djpu0b0v20353::::res://jump.mp3
+player.tscn::PackedScene::7023896126047838778::1715302559::0::1::::<><>::res://player/player.gd<>uid://crxib1q3e8t12::::res://MicrosoftTeams-image (1).png<>uid://dkfgfdw6qnsxq::::res://penguin left.png<>uid://7oibtok7i6h6::::res://penguin right.png<>uid://ysqygoufhpja::::res://win animation.png<>uid://csrta260gebja::::res://Speedrun_timer.tscn<>uid://djpu0b0v20353::::res://jump.mp3
 ::res://sound_effects/::1714093830
 lose.wav::AudioStreamWAV::7417055171946096518::1714093765::1714093830::1::::<><>::
 win.wav::AudioStreamWAV::1964398570356764626::1714093765::1714093830::1::::<><>::
