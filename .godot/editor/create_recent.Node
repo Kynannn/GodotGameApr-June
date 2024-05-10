@@ -1,7 +1,4 @@
-Button
-VBoxContainer
-MarginContainer
-TileMap
+Label
 AudioStreamPlayer
 AudioStreamPlayer2D
 Container
