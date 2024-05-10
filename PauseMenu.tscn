@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://4psi25sn7y0w"]
+[gd_scene load_steps=8 format=3 uid="uid://4psi25sn7y0w"]
 
 [ext_resource type="Shader" path="res://PauseMenu.gdshader" id="1_i48b3"]
+[ext_resource type="FontFile" uid="uid://bumelrknnwxkf" path="res://8-bit-hud.ttf" id="2_ikuee"]
 
 [sub_resource type="GDScript" id="GDScript_qb1mc"]
 script/source = "extends Control
@@ -28,11 +29,13 @@ func _on_resume_pressed():
 
 
 func _on_restart_pressed():
+	Global.speedrun_time = 0.0
 	resume()
 	get_tree().reload_current_scene()
 
 func _on_quit_pressed():
-	get_tree().quit()
+	resume()
+	get_tree().change_scene_to_file(\"res://menu.tscn\")
 	
 func _process(delta):
 	testEsc()
@@ -204,14 +207,20 @@ layout_mode = 2
 
 [node name="Resume" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ikuee")
+theme_override_font_sizes/font_size = 18
 text = "Resume"
 
 [node name="Restart" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ikuee")
+theme_override_font_sizes/font_size = 15
 text = "Restart"
 
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ikuee")
+theme_override_font_sizes/font_size = 16
 text = "Quit"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
