@@ -75,5 +75,5 @@ is_going_left = false
 max_speed = 80.0
 
 [node name="Spike" parent="." instance=ExtResource("2_js4si")]
-position = Vector2(989, 512)
+position = Vector2(1032, 496)
 scale = Vector2(2, 2)
