@@ -14,3 +14,4 @@ res://main_game2.tscn
 res://level_markers/level_end/level_end.tscn
 res://level_designs/level_2.tscn
 res://level_markers/level_end/level_end.gd
+res://menu.gd
