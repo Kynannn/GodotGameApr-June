@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://oe1bqv4oh1y5"
-path="res://.godot/imported/Mossy - Decorations&Hazards.png-fc052a153c304dd5d82b1ed2ea26cfcf.ctex"
+uid="uid://bf4f2xmo166kp"
+path="res://.godot/imported/Mossy - FloatingPlatforms.png-16e9c3ce2b1681a86d39988bdb6f2d4f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level_markers/Mossy - Decorations&Hazards.png"
-dest_files=["res://.godot/imported/Mossy - Decorations&Hazards.png-fc052a153c304dd5d82b1ed2ea26cfcf.ctex"]
+source_file="res://Mossy - FloatingPlatforms.png"
+dest_files=["res://.godot/imported/Mossy - FloatingPlatforms.png-16e9c3ce2b1681a86d39988bdb6f2d4f.ctex"]
 
 [params]
 

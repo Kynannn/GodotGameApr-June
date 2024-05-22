@@ -1,13 +1,1 @@
-res://menu.tscn
-res://level_menu.tscn
-res://node_2d.tscn
-res://player/player.tscn
-res://Speedrun_timer.tscn
-res://creds.tscn
-res://level_markers/level_end/level_end.tscn
-res://main_game2.tscn
-res://main_game.tscn
-res://level_designs/level_1.tscn
 res://level_designs/level_2.tscn
-res://Spike.gd
-res://spike.tscn

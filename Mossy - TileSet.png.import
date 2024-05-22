@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c50ip3io27oh7"
-path="res://.godot/imported/Mossy - Hanging Plants.png-5e5dfc956a85c03e4dcc7b557021d79e.ctex"
+uid="uid://dwvbdtfs50dp"
+path="res://.godot/imported/Mossy - TileSet.png-db67f509f02e3ad0a4a5b1eb3adab06e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level_markers/Mossy - Hanging Plants.png"
-dest_files=["res://.godot/imported/Mossy - Hanging Plants.png-5e5dfc956a85c03e4dcc7b557021d79e.ctex"]
+source_file="res://Mossy - TileSet.png"
+dest_files=["res://.godot/imported/Mossy - TileSet.png-db67f509f02e3ad0a4a5b1eb3adab06e.ctex"]
 
 [params]
 

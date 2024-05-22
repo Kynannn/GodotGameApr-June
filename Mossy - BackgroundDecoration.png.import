@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cm2ttxqkysk26"
-path="res://.godot/imported/Mossy - BackgroundDecoration.png-dd28375f7b1ca7800ba22ad3cb6e1d5c.ctex"
+uid="uid://cpfpvmafqbr58"
+path="res://.godot/imported/Mossy - BackgroundDecoration.png-741447ede789500f180914f368421b5d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level_markers/Mossy - BackgroundDecoration.png"
-dest_files=["res://.godot/imported/Mossy - BackgroundDecoration.png-dd28375f7b1ca7800ba22ad3cb6e1d5c.ctex"]
+source_file="res://Mossy - BackgroundDecoration.png"
+dest_files=["res://.godot/imported/Mossy - BackgroundDecoration.png-741447ede789500f180914f368421b5d.ctex"]
 
 [params]
 
