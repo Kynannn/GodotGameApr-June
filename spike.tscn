@@ -1,46 +1,31 @@
 [gd_scene load_steps=4 format=3 uid="uid://dixij07esi4ra"]
 
 [ext_resource type="Script" path="res://Spike.gd" id="1_ughao"]
-[ext_resource type="Texture2D" uid="uid://cdso40v2rcsrf" path="res://_pixel_adventure_1/Free/Traps/Spikes/Idle.png" id="2_h1cel"]
+[ext_resource type="Texture2D" uid="uid://bycdiwnvx5ulv" path="res://Idle.png" id="3_xjisq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t3aj3"]
-size = Vector2(77, 7)
+size = Vector2(58.25, 8)
 
 [node name="Spike" type="Area2D"]
 script = ExtResource("1_ughao")
 
-[node name="Sprite2D9" type="Sprite2D" parent="."]
-position = Vector2(-16, -8)
-texture = ExtResource("2_h1cel")
-region_enabled = true
-region_rect = Rect2(0, 0, 16, 16)
-
-[node name="Sprite2D8" type="Sprite2D" parent="."]
-position = Vector2(32, -8)
-texture = ExtResource("2_h1cel")
-region_enabled = true
-region_rect = Rect2(0, 0, 16, 16)
-
-[node name="Sprite2D4" type="Sprite2D" parent="."]
-position = Vector2(-32, -8)
-texture = ExtResource("2_h1cel")
-region_enabled = true
-region_rect = Rect2(0, 0, 16, 16)
-
-[node name="Sprite2D3" type="Sprite2D" parent="."]
-position = Vector2(16, -8)
-texture = ExtResource("2_h1cel")
-region_enabled = true
-region_rect = Rect2(0, 0, 16, 16)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(20.875, 5)
+shape = SubResource("RectangleShape2D_t3aj3")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -8)
-texture = ExtResource("2_h1cel")
-region_enabled = true
-region_rect = Rect2(0, 0, 16, 16)
+position = Vector2(4.76837e-07, 1)
+scale = Vector2(1.125, 1)
+texture = ExtResource("3_xjisq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, -3.5)
-shape = SubResource("RectangleShape2D_t3aj3")
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(16.8889, 0)
+scale = Vector2(1.125, 1)
+texture = ExtResource("3_xjisq")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D/Sprite2D"]
+position = Vector2(16.8889, 0)
+scale = Vector2(1.125, 1)
+texture = ExtResource("3_xjisq")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

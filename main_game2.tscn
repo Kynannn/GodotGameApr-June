@@ -1,13 +1,13 @@
 [gd_scene load_steps=10 format=3 uid="uid://bq0y4m1npc7rv"]
 
 [ext_resource type="Script" path="res://main_game2.gd" id="1_bvf7w"]
-[ext_resource type="Texture2D" uid="uid://b0x0wce4cgu76" path="res://Free Pixel Art Forest/Preview/Background.png" id="2_gyfao"]
 [ext_resource type="Texture2D" uid="uid://f5ue1v6cxo04" path="res://layer_1.png" id="2_jh3ld"]
 [ext_resource type="PackedScene" uid="uid://c7cospx0xchne" path="res://player/player.tscn" id="4_k5ulh"]
 [ext_resource type="PackedScene" uid="uid://4psi25sn7y0w" path="res://PauseMenu.tscn" id="5_8hj0x"]
 [ext_resource type="PackedScene" uid="uid://cmlyc6t228otu" path="res://level_markers/level_reset/level_reset_area.tscn" id="6_4amo4"]
 [ext_resource type="PackedScene" uid="uid://542m08y7pian" path="res://level_markers/level_start/level_start.tscn" id="7_bf14s"]
 [ext_resource type="PackedScene" uid="uid://d4nls2u54ty2q" path="res://level_markers/level_end/level_end.tscn" id="8_javk7"]
+[ext_resource type="Texture2D" uid="uid://857cbhjremla" path="res://layer_3.png" id="8_n36ao"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ldtb2"]
 size = Vector2(4521, 51)
@@ -55,9 +55,9 @@ scroll_offset = Vector2(10, 2.08165e-12)
 motion_mirroring = Vector2(793, 2.08165e-12)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(297, -48)
-scale = Vector2(0.9, 0.9)
-texture = ExtResource("2_gyfao")
+position = Vector2(287, 176.083)
+scale = Vector2(2.63125, 5.33889)
+texture = ExtResource("8_n36ao")
 
 [connection signal="body_entered" from="LevelResetArea" to="." method="_on_level_reset_area_body_entered"]
 [connection signal="body_entered" from="LevelEnd" to="." method="_on_level_end_body_entered"]

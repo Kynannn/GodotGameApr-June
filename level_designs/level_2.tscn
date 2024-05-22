@@ -1,45 +1,5 @@
-[gd_scene load_steps=14 format=3 uid="uid://csfbeum1qth12"]
-
-[ext_resource type="Texture2D" uid="uid://b6vfvkucgytuq" path="res://level_markers/Mossy - TileSet.png" id="1_hadmx"]
-[ext_resource type="Texture2D" uid="uid://ckces27yevnhr" path="res://level_markers/Mossy - MossyHills.png" id="2_e8kq1"]
-[ext_resource type="Texture2D" uid="uid://c50ip3io27oh7" path="res://level_markers/Mossy - Hanging Plants.png" id="3_84mpw"]
-[ext_resource type="Texture2D" uid="uid://dg32t4k5clb1w" path="res://level_markers/Mossy - FloatingPlatforms.png" id="4_5x6gs"]
-[ext_resource type="Texture2D" uid="uid://oe1bqv4oh1y5" path="res://level_markers/Mossy - Decorations&Hazards.png" id="5_kahts"]
-[ext_resource type="Texture2D" uid="uid://cm2ttxqkysk26" path="res://level_markers/Mossy - BackgroundDecoration.png" id="6_0ixfk"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6eorr"]
-texture = ExtResource("1_hadmx")
-texture_region_size = Vector2i(512, 512)
-140:112/0 = 0
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5numf"]
-texture = ExtResource("2_e8kq1")
-texture_region_size = Vector2i(512, 512)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j5de0"]
-texture = ExtResource("3_84mpw")
-texture_region_size = Vector2i(512, 512)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bir5c"]
-texture = ExtResource("4_5x6gs")
-texture_region_size = Vector2i(512, 512)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vkw8q"]
-texture = ExtResource("5_kahts")
-texture_region_size = Vector2i(512, 512)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wv1eg"]
-texture = ExtResource("6_0ixfk")
-texture_region_size = Vector2i(512, 512)
-
-[sub_resource type="TileSet" id="TileSet_2tnhy"]
-sources/2 = SubResource("TileSetAtlasSource_6eorr")
-sources/3 = SubResource("TileSetAtlasSource_5numf")
-sources/4 = SubResource("TileSetAtlasSource_j5de0")
-sources/5 = SubResource("TileSetAtlasSource_bir5c")
-sources/6 = SubResource("TileSetAtlasSource_vkw8q")
-sources/7 = SubResource("TileSetAtlasSource_wv1eg")
+[gd_scene format=3 uid="uid://csfbeum1qth12"]
 
 [node name="Level2" type="TileMap"]
-tile_set = SubResource("TileSet_2tnhy")
 format = 2
+layer_0/tile_data = PackedInt32Array(196611, 65538, 0, 262147, 65538, 1, 327683, 65538, 2, 196612, 131074, 0, 262148, 131074, 1, 327684, 131074, 2)

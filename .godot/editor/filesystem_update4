@@ -1,8 +1,1 @@
-res://level_markers/enemy.tscn
-res://level_markers/level_2.tscn
-res://cutscene_opening.tscn
-res://PauseMenu.tscn
-res://menu.tscn
-res://main_game2.tscn
-res://main_game.tscn
-res://level_markers/level_end/level_end.tscn
+res://level_designs/level_2.tscn
