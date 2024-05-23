@@ -1,12 +1,57 @@
-[gd_scene load_steps=22 format=3 uid="uid://c7cospx0xchne"]
+[gd_scene load_steps=34 format=3 uid="uid://c7cospx0xchne"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_jg16v"]
 [ext_resource type="Texture2D" uid="uid://crxib1q3e8t12" path="res://MicrosoftTeams-image (1).png" id="2_58a5r"]
+[ext_resource type="Texture2D" uid="uid://d0ds7utrerrc4" path="res://die.png" id="2_pto3i"]
 [ext_resource type="Texture2D" uid="uid://dkfgfdw6qnsxq" path="res://penguin left.png" id="3_55mg3"]
 [ext_resource type="Texture2D" uid="uid://7oibtok7i6h6" path="res://penguin right.png" id="4_gh5vw"]
 [ext_resource type="Texture2D" uid="uid://ysqygoufhpja" path="res://win animation.png" id="5_itmsq"]
 [ext_resource type="PackedScene" uid="uid://csrta260gebja" path="res://Speedrun_timer.tscn" id="6_wde2s"]
 [ext_resource type="AudioStream" uid="uid://djpu0b0v20353" path="res://jump.mp3" id="7_5rc0e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ai44s"]
+atlas = ExtResource("2_pto3i")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2acx2"]
+atlas = ExtResource("2_pto3i")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wod44"]
+atlas = ExtResource("2_pto3i")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jqcdt"]
+atlas = ExtResource("2_pto3i")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_28vmv"]
+atlas = ExtResource("2_pto3i")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shjcq"]
+atlas = ExtResource("2_pto3i")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6fqvm"]
+atlas = ExtResource("2_pto3i")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uhu0t"]
+atlas = ExtResource("2_pto3i")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nwv8k"]
+atlas = ExtResource("2_pto3i")
+region = Rect2(128, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_csiom"]
+atlas = ExtResource("2_pto3i")
+region = Rect2(144, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aru24"]
+atlas = ExtResource("2_pto3i")
+region = Rect2(160, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ffy0a"]
 atlas = ExtResource("2_58a5r")
@@ -58,6 +103,44 @@ region = Rect2(32, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_k4i64"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ai44s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2acx2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wod44")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jqcdt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_28vmv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shjcq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6fqvm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uhu0t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nwv8k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_csiom")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aru24")
+}],
+"loop": true,
+"name": &"die",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ffy0a")
@@ -116,20 +199,20 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ltuw7"]
-size = Vector2(24, 26)
+size = Vector2(24, 28)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_jg16v")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-4.76837e-07, -2)
+position = Vector2(0, -2)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_k4i64")
-animation = &"idle"
+animation = &"die"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 2)
+position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_ltuw7")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -144,4 +227,5 @@ bus = &"Sfx"
 [node name="CoyoteTimer" type="Timer" parent="."]
 one_shot = true
 
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="timeout" from="CoyoteTimer" to="." method="_on_coyote_timer_timeout"]

@@ -5,6 +5,8 @@ extends Node2D
 func _ready():
 	BgMusic.play()
 
+
+
 func _on_level_reset_area_body_entered(body):
 	if body.name == "Player":
 		$Player.position = player_start_position
@@ -13,3 +15,9 @@ func _on_level_reset_area_body_entered(body):
 func _on_level_end_body_entered(body):
 	if body.name == "Player":
 		$LevelEnd.play_level_complete_sound()
+		
+		
+func _on_spike_body_entered(body):
+	if body.name == "Player":
+		$Player/AnimatedSprite2D.play("die")
+		
