@@ -28,4 +28,9 @@ position = Vector2(16.8889, 0)
 scale = Vector2(1.125, 1)
 texture = ExtResource("3_xjisq")
 
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D/Sprite2D"]
+position = Vector2(16.8889, 0)
+scale = Vector2(1.125, 1)
+texture = ExtResource("3_xjisq")
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -58,11 +58,18 @@ func win():
 func die() -> void:
 	print("Die")
 	if not is_dead:
-		$AnimatedSprite2D.play("die")
+		$diemusic.play()
+		$AnimatedSprite2D.play("explode")
 		is_dead = true
+		$ResetLevelTimer.start()
 
 
 func _on_animated_sprite_2d_animation_finished():
-	if $AnimationTree.tree_root.get_node("die").animation:
-		is_dead = false
-		get_tree().reload_current_scene()
+	#if $AnimationTree.tree_root.get_node("die").animation:
+		#get_tree().change_scene_to_file("res://main_game.tscn")
+		#is_dead = false
+	pass
+
+
+func _on_reset_level_timer_timeout():
+	get_tree().change_scene_to_file("res://main_game.tscn")

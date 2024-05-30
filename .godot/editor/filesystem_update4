@@ -1,9 +1,8 @@
-res://main_game.gd
-res://main_game.tscn
-res://player/player.tscn
-res://level_markers/level_end/level_end.tscn
-res://spike.tscn
-res://level_designs/level_1.tscn
+res://wenbi.tscn
 res://main_game2.tscn
+res://player/player.tscn
+res://spike.tscn
+res://spike2.tscn
 res://level_designs/level_2.tscn
-res://player/player.gd
+res://main_game2.gd
+res://wenbi.gd

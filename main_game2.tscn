@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bq0y4m1npc7rv"]
+[gd_scene load_steps=14 format=3 uid="uid://bq0y4m1npc7rv"]
 
 [ext_resource type="Script" path="res://main_game2.gd" id="1_bvf7w"]
 [ext_resource type="Texture2D" uid="uid://f5ue1v6cxo04" path="res://layer_1.png" id="2_jh3ld"]
@@ -6,11 +6,15 @@
 [ext_resource type="PackedScene" uid="uid://4psi25sn7y0w" path="res://PauseMenu.tscn" id="5_8hj0x"]
 [ext_resource type="PackedScene" uid="uid://cmlyc6t228otu" path="res://level_markers/level_reset/level_reset_area.tscn" id="6_4amo4"]
 [ext_resource type="PackedScene" uid="uid://542m08y7pian" path="res://level_markers/level_start/level_start.tscn" id="7_bf14s"]
+[ext_resource type="PackedScene" uid="uid://csfbeum1qth12" path="res://level_designs/level_2.tscn" id="8_11l5t"]
 [ext_resource type="PackedScene" uid="uid://d4nls2u54ty2q" path="res://level_markers/level_end/level_end.tscn" id="8_javk7"]
-[ext_resource type="Texture2D" uid="uid://857cbhjremla" path="res://layer_3.png" id="8_n36ao"]
+[ext_resource type="Texture2D" uid="uid://dxprvff5vf8nr" path="res://Background.png" id="8_vdgey"]
+[ext_resource type="PackedScene" uid="uid://dixij07esi4ra" path="res://spike.tscn" id="10_p2umg"]
+[ext_resource type="PackedScene" uid="uid://n4s76clit5dp" path="res://spike2.tscn" id="11_b47ci"]
+[ext_resource type="PackedScene" uid="uid://dylwb3e1u3r7r" path="res://wenbi.tscn" id="12_e3sky"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ldtb2"]
-size = Vector2(4521, 51)
+size = Vector2(6401, 51)
 
 [node name="MainGame2" type="Node2D"]
 script = ExtResource("1_bvf7w")
@@ -28,24 +32,28 @@ stretch_mode = 4
 
 [node name="Player" parent="." instance=ExtResource("4_k5ulh")]
 z_index = 1
-position = Vector2(24, 133)
+position = Vector2(105, 41)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("5_8hj0x")]
+offset_left = 82.0
+offset_top = -79.0
+offset_right = 82.0
+offset_bottom = -79.0
 
 [node name="LevelResetArea" parent="." instance=ExtResource("6_4amo4")]
 position = Vector2(714, 509)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LevelResetArea"]
-position = Vector2(211.5, 519)
+position = Vector2(1158, 361)
 shape = SubResource("RectangleShape2D_ldtb2")
 
 [node name="LevelStart" parent="." instance=ExtResource("7_bf14s")]
-position = Vector2(12, 113)
+position = Vector2(97, 24)
 
 [node name="LevelEnd" parent="." instance=ExtResource("8_javk7")]
-position = Vector2(1688, 64)
+position = Vector2(3957, 479)
 metadata/_edit_group_ = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -55,9 +63,29 @@ scroll_offset = Vector2(10, 2.08165e-12)
 motion_mirroring = Vector2(793, 2.08165e-12)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(287, 176.083)
-scale = Vector2(2.63125, 5.33889)
-texture = ExtResource("8_n36ao")
+position = Vector2(609, -182)
+scale = Vector2(2.20571, 2.78815)
+texture = ExtResource("8_vdgey")
+
+[node name="Level2" parent="." instance=ExtResource("8_11l5t")]
+
+[node name="Spike" parent="." instance=ExtResource("10_p2umg")]
+position = Vector2(2611, 287)
+
+[node name="Spike2" parent="." instance=ExtResource("11_b47ci")]
+position = Vector2(2671, 287)
+
+[node name="Spike3" parent="." instance=ExtResource("11_b47ci")]
+position = Vector2(3195, 286)
+
+[node name="Spike4" parent="." instance=ExtResource("11_b47ci")]
+position = Vector2(3456, 286)
+
+[node name="Spike5" parent="." instance=ExtResource("11_b47ci")]
+position = Vector2(3716, 286)
+
+[node name="wenbi" parent="." instance=ExtResource("12_e3sky")]
+position = Vector2(3055, 430)
 
 [connection signal="body_entered" from="LevelResetArea" to="." method="_on_level_reset_area_body_entered"]
 [connection signal="body_entered" from="LevelEnd" to="." method="_on_level_end_body_entered"]
