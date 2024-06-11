@@ -1,8 +1,8 @@
-res://wenbi.tscn
-res://main_game2.tscn
 res://player/player.tscn
+res://main_game.tscn
 res://spike.tscn
 res://spike2.tscn
+res://main_game2.tscn
+res://wenbi.tscn
 res://level_designs/level_2.tscn
-res://main_game2.gd
-res://wenbi.gd
+res://turtle.tscn
