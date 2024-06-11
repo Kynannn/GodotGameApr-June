@@ -1,9 +1,10 @@
-AnimationPlayer
-AnimationTree
+Area2D
 CollisionShape2D
 Sprite2D
+TextEdit
+AnimationPlayer
+AnimationTree
 CharacterBody2D
-Area2D
 Node2D
 AudioStreamPlayer
 Timer
@@ -11,4 +12,3 @@ Camera2D
 DirectionalLight2D
 Label
 AudioStreamPlayer2D
-Container

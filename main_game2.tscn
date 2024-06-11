@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bq0y4m1npc7rv"]
+[gd_scene load_steps=16 format=3 uid="uid://bq0y4m1npc7rv"]
 
 [ext_resource type="Script" path="res://main_game2.gd" id="1_bvf7w"]
 [ext_resource type="PackedScene" uid="uid://c7cospx0xchne" path="res://player/player.tscn" id="4_k5ulh"]
@@ -12,9 +12,13 @@
 [ext_resource type="PackedScene" uid="uid://n4s76clit5dp" path="res://spike2.tscn" id="11_b47ci"]
 [ext_resource type="PackedScene" uid="uid://b8iylcwee1uey" path="res://turtle.tscn" id="12_2ebx5"]
 [ext_resource type="PackedScene" uid="uid://dylwb3e1u3r7r" path="res://wenbi.tscn" id="12_e3sky"]
+[ext_resource type="Texture2D" uid="uid://de4h0vfrkjxc0" path="res://portal.png" id="13_ms0wk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ldtb2"]
 size = Vector2(6401, 51)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dgr7w"]
+radius = 23.0217
 
 [node name="MainGame2" type="Node2D"]
 script = ExtResource("1_bvf7w")
@@ -59,15 +63,22 @@ texture = ExtResource("8_vdgey")
 [node name="Level2" parent="." instance=ExtResource("8_11l5t")]
 
 [node name="Spike" parent="." instance=ExtResource("10_p2umg")]
-position = Vector2(2611, 287)
+position = Vector2(2425, 700)
 
 [node name="Spike2" parent="." instance=ExtResource("11_b47ci")]
-position = Vector2(2671, 287)
+position = Vector2(2701, 293)
+
+[node name="Spike7" parent="." instance=ExtResource("11_b47ci")]
+position = Vector2(2592, 294)
 
 [node name="Spike4" parent="." instance=ExtResource("11_b47ci")]
 position = Vector2(2679, 505)
 
 [node name="Spike3" parent="." instance=ExtResource("11_b47ci")]
+position = Vector2(3270, 293)
+scale = Vector2(0.994612, 1)
+
+[node name="Spike6" parent="." instance=ExtResource("11_b47ci")]
 position = Vector2(3270, 293)
 scale = Vector2(0.994612, 1)
 
@@ -80,5 +91,30 @@ position = Vector2(3055, 430)
 [node name="turtle" parent="." instance=ExtResource("12_2ebx5")]
 position = Vector2(2725, 818)
 
+[node name="Portal" type="Area2D" parent="."]
+
+[node name="portal" type="Sprite2D" parent="Portal"]
+position = Vector2(-83, 414)
+scale = Vector2(0.674, 0.634)
+texture = ExtResource("13_ms0wk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
+position = Vector2(-72, 412)
+shape = SubResource("CircleShape2D_dgr7w")
+
+[node name="Portal2" type="Area2D" parent="."]
+
+[node name="portal" type="Sprite2D" parent="Portal2"]
+z_index = 2
+position = Vector2(3943, 352)
+scale = Vector2(0.449, 0.415)
+texture = ExtResource("13_ms0wk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal2"]
+position = Vector2(3946, 346)
+shape = SubResource("CircleShape2D_dgr7w")
+
 [connection signal="body_entered" from="LevelResetArea" to="." method="_on_level_reset_area_body_entered"]
 [connection signal="body_entered" from="LevelEnd" to="." method="_on_level_end_body_entered"]
+[connection signal="body_entered" from="Portal" to="." method="_on_portal_body_entered"]
+[connection signal="body_entered" from="Portal2" to="." method="_on_portal_2_body_entered"]

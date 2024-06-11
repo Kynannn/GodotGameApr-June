@@ -6,3 +6,5 @@ res://main_game2.tscn
 res://wenbi.tscn
 res://level_designs/level_2.tscn
 res://turtle.tscn
+res://main_game2.gd
+res://timer.gd

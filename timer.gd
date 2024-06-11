@@ -4,7 +4,6 @@ var time = Global.speedrun_time
 
 func _physics_process(delta):
 	time = float(time) + delta
-	
 	if Global.complete_time == str(0):
 		update_ui()
 	 
