@@ -4,15 +4,15 @@
 [ext_resource type="PackedScene" uid="uid://c7cospx0xchne" path="res://player/player.tscn" id="4_k5ulh"]
 [ext_resource type="PackedScene" uid="uid://4psi25sn7y0w" path="res://PauseMenu.tscn" id="5_8hj0x"]
 [ext_resource type="PackedScene" uid="uid://cmlyc6t228otu" path="res://level_markers/level_reset/level_reset_area.tscn" id="6_4amo4"]
+[ext_resource type="Texture2D" uid="uid://doekmxlr0w7w8" path="res://2d-dark-forest-parallax-background-in-pixel-art-great-for-v0-uecnp1edrekb1.jpeg" id="7_2r481"]
 [ext_resource type="PackedScene" uid="uid://542m08y7pian" path="res://level_markers/level_start/level_start.tscn" id="7_bf14s"]
 [ext_resource type="PackedScene" uid="uid://csfbeum1qth12" path="res://level_designs/level_2.tscn" id="8_11l5t"]
-[ext_resource type="PackedScene" uid="uid://d4nls2u54ty2q" path="res://level_markers/level_end/level_end.tscn" id="8_javk7"]
-[ext_resource type="Texture2D" uid="uid://dxprvff5vf8nr" path="res://Background.png" id="8_vdgey"]
 [ext_resource type="PackedScene" uid="uid://dixij07esi4ra" path="res://spike.tscn" id="10_p2umg"]
 [ext_resource type="PackedScene" uid="uid://n4s76clit5dp" path="res://spike2.tscn" id="11_b47ci"]
 [ext_resource type="PackedScene" uid="uid://b8iylcwee1uey" path="res://turtle.tscn" id="12_2ebx5"]
 [ext_resource type="PackedScene" uid="uid://dylwb3e1u3r7r" path="res://wenbi.tscn" id="12_e3sky"]
 [ext_resource type="Texture2D" uid="uid://de4h0vfrkjxc0" path="res://portal.png" id="13_ms0wk"]
+[ext_resource type="PackedScene" uid="uid://c1eir0j67vbt4" path="res://level_markers/level_end/level_end2.tscn" id="13_xri1j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ldtb2"]
 size = Vector2(6401, 51)
@@ -45,10 +45,6 @@ shape = SubResource("RectangleShape2D_ldtb2")
 [node name="LevelStart" parent="." instance=ExtResource("7_bf14s")]
 position = Vector2(97, 24)
 
-[node name="LevelEnd" parent="." instance=ExtResource("8_javk7")]
-position = Vector2(3957, 479)
-metadata/_edit_group_ = true
-
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 scroll_offset = Vector2(10, 2.08165e-12)
 
@@ -56,9 +52,9 @@ scroll_offset = Vector2(10, 2.08165e-12)
 motion_mirroring = Vector2(793, 2.08165e-12)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(609, -182)
-scale = Vector2(2.20571, 2.78815)
-texture = ExtResource("8_vdgey")
+position = Vector2(323, 168)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_2r481")
 
 [node name="Level2" parent="." instance=ExtResource("8_11l5t")]
 
@@ -114,7 +110,9 @@ texture = ExtResource("13_ms0wk")
 position = Vector2(3946, 346)
 shape = SubResource("CircleShape2D_dgr7w")
 
+[node name="LevelEnd" parent="." instance=ExtResource("13_xri1j")]
+position = Vector2(3952, 480)
+
 [connection signal="body_entered" from="LevelResetArea" to="." method="_on_level_reset_area_body_entered"]
-[connection signal="body_entered" from="LevelEnd" to="." method="_on_level_end_body_entered"]
 [connection signal="body_entered" from="Portal" to="." method="_on_portal_body_entered"]
 [connection signal="body_entered" from="Portal2" to="." method="_on_portal_2_body_entered"]

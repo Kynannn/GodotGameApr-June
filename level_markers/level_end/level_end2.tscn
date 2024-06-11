@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://c1eir0j67vbt4"]
+
+[ext_resource type="Script" path="res://level_markers/level_end/level_end2.gd" id="1_egqox"]
+[ext_resource type="Texture2D" uid="uid://bgtllixtlsdoe" path="res://_pixel_adventure_1/Free/Items/Checkpoints/End/End (Idle).png" id="2_qnp6i"]
+[ext_resource type="PackedScene" uid="uid://b6pfj8hsifg6j" path="res://win_music.tscn" id="3_pikgs"]
+[ext_resource type="AudioStream" uid="uid://28tmfhjm4rd7" path="res://sound_effects/win.wav" id="4_w0ug1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j0vln"]
+size = Vector2(44, 42)
+
+[node name="LevelEnd" type="Area2D"]
+script = ExtResource("1_egqox")
+
+[node name="Trophy" type="Sprite2D" parent="."]
+texture = ExtResource("2_qnp6i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 11)
+shape = SubResource("RectangleShape2D_j0vln")
+
+[node name="win_music" parent="." instance=ExtResource("3_pikgs")]
+
+[node name="WinSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_w0ug1")
+
+[connection signal="finished" from="win_music" to="." method="_on_win_music_finished"]
