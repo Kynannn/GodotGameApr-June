@@ -31,15 +31,15 @@ stretch_mode = 4
 [node name="Level1" parent="." instance=ExtResource("1_orknh")]
 
 [node name="Label2" type="Label" parent="Level1"]
-offset_left = 1438.0
-offset_top = 343.0
-offset_right = 1635.0
-offset_bottom = 382.0
+offset_left = 1440.0
+offset_top = 346.0
+offset_right = 1637.0
+offset_bottom = 385.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 13
 theme_override_font_sizes/font_size = 10
-text = "dont jump here
+text = "dont jump up here
 theres a bug"
 horizontal_alignment = 2
 

@@ -28,9 +28,9 @@ offset_bottom = 656.0
 texture = ExtResource("2_1ep2s")
 stretch_mode = 4
 
-[node name="Level1" parent="." instance=ExtResource("3_tv3v4")]
+[node name="Level2" parent="." instance=ExtResource("3_tv3v4")]
 
-[node name="Label2" type="Label" parent="Level1"]
+[node name="Label2" type="Label" parent="Level2"]
 offset_left = 1438.0
 offset_top = 343.0
 offset_right = 1635.0
@@ -43,7 +43,7 @@ text = "dont jump here
 theres a bug"
 horizontal_alignment = 2
 
-[node name="Label3" type="Label" parent="Level1"]
+[node name="Label3" type="Label" parent="Level2"]
 offset_left = 439.0
 offset_top = 199.0
 offset_right = 636.0
@@ -55,7 +55,7 @@ theme_override_font_sizes/font_size = 13
 text = "dont fall down
 you will die"
 
-[node name="Label" type="Label" parent="Level1"]
+[node name="Label" type="Label" parent="Level2"]
 offset_left = 905.0
 offset_top = 447.0
 offset_right = 1102.0
@@ -66,7 +66,7 @@ theme_override_constants/outline_size = 13
 theme_override_font_sizes/font_size = 13
 text = "You can double jump btw"
 
-[node name="Label4" type="Label" parent="Level1"]
+[node name="Label4" type="Label" parent="Level2"]
 offset_left = 197.0
 offset_top = 140.0
 offset_right = 394.0

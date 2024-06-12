@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bq0y4m1npc7rv"]
+[gd_scene load_steps=19 format=3 uid="uid://bq0y4m1npc7rv"]
 
 [ext_resource type="Script" path="res://main_game2.gd" id="1_bvf7w"]
 [ext_resource type="PackedScene" uid="uid://c7cospx0xchne" path="res://player/player.tscn" id="4_k5ulh"]
@@ -13,6 +13,9 @@
 [ext_resource type="PackedScene" uid="uid://dylwb3e1u3r7r" path="res://wenbi.tscn" id="12_e3sky"]
 [ext_resource type="Texture2D" uid="uid://de4h0vfrkjxc0" path="res://portal.png" id="13_ms0wk"]
 [ext_resource type="PackedScene" uid="uid://c1eir0j67vbt4" path="res://level_markers/level_end/level_end2.tscn" id="13_xri1j"]
+[ext_resource type="Texture2D" uid="uid://dxm5or233d1fc" path="res://player/red_sign.png" id="14_lgixv"]
+[ext_resource type="Texture2D" uid="uid://c4q17fjf0rim4" path="res://player/blue_sign.png" id="15_7ltp7"]
+[ext_resource type="Texture2D" uid="uid://c5dg4yewo6biv" path="res://player/yellow_sign.png" id="16_h8n05"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ldtb2"]
 size = Vector2(6401, 51)
@@ -52,34 +55,35 @@ scroll_offset = Vector2(10, 2.08165e-12)
 motion_mirroring = Vector2(793, 2.08165e-12)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(323, 168)
+position = Vector2(324, 168)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_2r481")
 
 [node name="Level2" parent="." instance=ExtResource("8_11l5t")]
+position = Vector2(2, -4.76837e-06)
 
 [node name="Spike" parent="." instance=ExtResource("10_p2umg")]
-position = Vector2(2425, 700)
+position = Vector2(2414, -73)
 
 [node name="Spike2" parent="." instance=ExtResource("11_b47ci")]
-position = Vector2(2701, 293)
+position = Vector2(2690, 288)
 
 [node name="Spike7" parent="." instance=ExtResource("11_b47ci")]
-position = Vector2(2592, 294)
+position = Vector2(2609, 288)
 
 [node name="Spike4" parent="." instance=ExtResource("11_b47ci")]
-position = Vector2(2679, 505)
+position = Vector2(2646, -39)
 
 [node name="Spike3" parent="." instance=ExtResource("11_b47ci")]
-position = Vector2(3270, 293)
+position = Vector2(3267, -63)
 scale = Vector2(0.994612, 1)
 
 [node name="Spike6" parent="." instance=ExtResource("11_b47ci")]
-position = Vector2(3270, 293)
+position = Vector2(3256, -63)
 scale = Vector2(0.994612, 1)
 
 [node name="Spike5" parent="." instance=ExtResource("11_b47ci")]
-position = Vector2(3572, 291)
+position = Vector2(3564, -60)
 
 [node name="wenbi" parent="." instance=ExtResource("12_e3sky")]
 position = Vector2(3055, 430)
@@ -110,8 +114,65 @@ texture = ExtResource("13_ms0wk")
 position = Vector2(3946, 346)
 shape = SubResource("CircleShape2D_dgr7w")
 
-[node name="LevelEnd" parent="." instance=ExtResource("13_xri1j")]
-position = Vector2(3952, 480)
+[node name="Spike8" parent="." instance=ExtResource("11_b47ci")]
+position = Vector2(272, -267)
+
+[node name="RedSign" type="Sprite2D" parent="."]
+position = Vector2(574, 68)
+scale = Vector2(2, 2)
+texture = ExtResource("14_lgixv")
+
+[node name="BlueSign" type="Sprite2D" parent="."]
+position = Vector2(876, 124)
+rotation = 1.5708
+scale = Vector2(2, 2)
+texture = ExtResource("15_7ltp7")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 3306.0
+offset_top = 270.0
+offset_right = 3498.0
+offset_bottom = 297.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 9
+theme_override_font_sizes/font_size = 14
+text = "a scary monster lies ahead..."
+horizontal_alignment = 2
+
+[node name="Label" type="Label" parent="."]
+offset_left = 2846.0
+offset_top = 421.0
+offset_right = 3020.0
+offset_bottom = 464.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 9
+theme_override_font_sizes/font_size = 14
+text = "you can climb this
+but theres also a shortcut"
+horizontal_alignment = 2
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 3080.0
+offset_top = 746.0
+offset_right = 3210.0
+offset_bottom = 801.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 9
+theme_override_font_sizes/font_size = 18
+text = "oh, you found
+the easier way"
+
+[node name="YellowSign" type="Sprite2D" parent="."]
+position = Vector2(2289, 577)
+rotation = -0.20944
+scale = Vector2(2, 2)
+texture = ExtResource("16_h8n05")
+
+[node name="LevelEnd2" parent="." instance=ExtResource("13_xri1j")]
+position = Vector2(3956, 484)
 
 [connection signal="body_entered" from="LevelResetArea" to="." method="_on_level_reset_area_body_entered"]
 [connection signal="body_entered" from="Portal" to="." method="_on_portal_body_entered"]
