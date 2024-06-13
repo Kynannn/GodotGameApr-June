@@ -1,6 +1,6 @@
 extends Node2D
 @onready var player_start_position = $Player.position
-
+@onready var portal2 = $Portal2.position
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	BgMusic.play()
@@ -25,3 +25,8 @@ func _on_level_reset_area_body_entered(body):
 		$Player.position = player_start_position
 		$LevelResetArea.play_lose_sound()
 
+
+
+func _on_portal_body_entered(body):
+	if body.name == "Player":
+		$Player.position = portal2
