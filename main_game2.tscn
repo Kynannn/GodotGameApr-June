@@ -103,18 +103,18 @@ position = Vector2(-72, 412)
 shape = SubResource("CircleShape2D_dgr7w")
 
 [node name="Portal2" type="Area2D" parent="."]
+position = Vector2(3952, 350)
 
 [node name="portal" type="Sprite2D" parent="Portal2"]
 z_index = 2
-position = Vector2(3943, 352)
+position = Vector2(-4.75002, 2.75)
 scale = Vector2(0.449, 0.415)
 texture = ExtResource("13_ms0wk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal2"]
-position = Vector2(3946, 346)
+position = Vector2(-1.75024, -3.25)
 shape = SubResource("CircleShape2D_dgr7w")
 
 [connection signal="body_entered" from="LevelResetArea" to="." method="_on_level_reset_area_body_entered"]
 [connection signal="body_entered" from="LevelEnd" to="." method="_on_level_end_body_entered"]
 [connection signal="body_entered" from="Portal" to="." method="_on_portal_body_entered"]
-[connection signal="body_entered" from="Portal2" to="." method="_on_portal_2_body_entered"]
