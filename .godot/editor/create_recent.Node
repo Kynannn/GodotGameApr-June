@@ -1,6 +1,7 @@
+Camera2D
+AudioStreamPlayer
 Label
 Sprite2D
-AudioStreamPlayer
 VideoStreamPlayer
 Area2D
 CollisionShape2D
@@ -10,5 +11,4 @@ AnimationTree
 CharacterBody2D
 Node2D
 Timer
-Camera2D
 DirectionalLight2D

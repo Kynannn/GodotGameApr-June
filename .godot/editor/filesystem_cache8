@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1718176719
+::res://::1718238103
 2d-dark-forest-parallax-background-in-pixel-art-great-for-v0-uecnp1edrekb1.jpeg::CompressedTexture2D::8150793198319133997::1718110674::1718110677::1::::<><>::
 8-bit-hud.ttf::FontFile::3815233510160406869::1713337196::1714093254::1::::<><>::
 8bit16 2.ttf::FontFile::3254475331149737015::1713337515::1714093254::1::::<><>::
@@ -9,17 +9,19 @@ actor.tscn::PackedScene::4199172195998748186::1715233754::0::1::::<><>::res://Ac
 Background copy.png::CompressedTexture2D::7000474145948567652::1714024430::1714093255::1::::<><>::
 Background.png::CompressedTexture2D::8805641083346111047::1714023065::1714093255::1::::<><>::
 bg_music.gd::GDScript::-1::1715053495::0::1::::<>AudioStreamPlayer<>::
-bg_music.tscn::PackedScene::6026150773730630763::1715233754::0::1::::<><>::uid://d17v3yav816qx::::res://spotifydown.com - bee..mp3<>res://bg_music.gd
+bg_music.tscn::PackedScene::6026150773730630763::1718238021::0::1::::<><>::uid://d17v3yav816qx::::res://spotifydown.com - bee..mp3<>res://bg_music.gd
 bg_settings.tscn::PackedScene::3182420035172387010::1715233755::0::1::::<><>::uid://c60c10cy5xaj1::::res://Background copy.png
 Children Yay! - Sound Effect.mp3::AudioStreamMP3::8255953148415259504::1718176719::1718176719::1::::<><>::
 Creds.gd::GDScript::-1::1714024506::0::1::::<>Control<>::
 creds.tscn::PackedScene::2425512614425309974::1715302079::0::1::::<><>::res://Creds.gd<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf<>uid://bllt806y6he3s::::res://bg_settings.tscn<>uid://bmmqy6upjbhqd::::res://8bit16 2.ttf
 cutscene2.mp3::AudioStreamMP3::889143367663917283::1718111162::1718111159::1::::<><>::
 cutscene forest.mp3::AudioStreamMP3::456862398704997752::1718108819::1718108817::1::::<><>::
+cutscene_final.gd::GDScript::-1::1718235332::0::1::::<>VideoStreamPlayer<>::
+cutscene_final.tscn::PackedScene::212765887508584324::1718238103::0::1::::<><>::res://cutscenes/cutscene-low-budget.ogv<>res://cutscene_final.gd<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf<>uid://bkfvg4h1kl2em::::res://Screenshot 2023-05-31 at 5.35.21 PM.jpg
 cutscene_forest.gd::GDScript::-1::1718110533::0::1::::<>VideoStreamPlayer<>::
-cutscene_forest.tscn::PackedScene::7252797381927877560::1718112626::0::1::::<><>::res://cutscenes/cutscene-forest.ogv<>res://cutscene_forest.gd<>uid://grkpsij0mkyq::::res://cutscene forest.mp3<>uid://bkfvg4h1kl2em::::res://Screenshot 2023-05-31 at 5.35.21 PM.jpg<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf
+cutscene_forest.tscn::PackedScene::7252797381927877560::1718238022::0::1::::<><>::res://cutscenes/cutscene-forest.ogv<>res://cutscene_forest.gd<>uid://grkpsij0mkyq::::res://cutscene forest.mp3<>uid://bkfvg4h1kl2em::::res://Screenshot 2023-05-31 at 5.35.21 PM.jpg<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf
 cutscene_meetGojo.gd::GDScript::-1::1718113252::0::1::::<>VideoStreamPlayer<>::
-cutscene_meetGojo.tscn::PackedScene::3385163067119738674::1718176371::0::1::::<><>::res://cutscenes/cutscene2.ogv<>res://cutscene_meetGojo.gd<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf<>uid://mwycc6xrqi16::::res://cutscene2.mp3<>uid://bkfvg4h1kl2em::::res://Screenshot 2023-05-31 at 5.35.21 PM.jpg
+cutscene_meetGojo.tscn::PackedScene::3385163067119738674::1718177025::0::1::::<><>::res://cutscenes/cutscene2.ogv<>res://cutscene_meetGojo.gd<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf<>uid://mwycc6xrqi16::::res://cutscene2.mp3<>uid://bkfvg4h1kl2em::::res://Screenshot 2023-05-31 at 5.35.21 PM.jpg
 cutscene_opening.gd::GDScript::-1::1715301872::0::1::::<>VideoStreamPlayer<>::
 cutscene_opening.tscn::PackedScene::4574712521433644827::1718110782::0::1::::<><>::res://cutscenes/opening-cutscene.ogv<>res://cutscene_opening.gd<>uid://npkiu1bo01oi::::res://cutscenes/opening cutscene audio that yejun approves of.mp3<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf
 default_bus_layout.tres::AudioBusLayout::141029935399039321::1714036200::0::1::::<><>::
@@ -44,14 +46,15 @@ layer_1.png::CompressedTexture2D::414098433302992415::1715302656::1715302656::1:
 layer_3.png::CompressedTexture2D::2380109751801987638::1716348627::1716348627::1::::<><>::
 left.png::CompressedTexture2D::1562674178402718186::1718104773::1718104773::1::::<><>::
 level_menu.gd::GDScript::-1::1715302013::0::1::::<>Control<>::
-level_menu.tscn::PackedScene::6334978653688796728::1715302013::0::1::::<><>::res://level_menu.gd
+level_menu.tscn::PackedScene::6334978653688796728::1718238022::0::1::::<><>::res://level_menu.gd
 main_game2.gd::GDScript::-1::1718110698::0::1::::<>Node2D<>::
-main_game2.tscn::PackedScene::3562561292658689015::1718176371::0::1::::<><>::res://main_game2.gd<>uid://c7cospx0xchne::::res://player/player.tscn<>uid://4psi25sn7y0w::::res://PauseMenu.tscn<>uid://cmlyc6t228otu::::res://level_markers/level_reset/level_reset_area.tscn<>uid://doekmxlr0w7w8::::res://2d-dark-forest-parallax-background-in-pixel-art-great-for-v0-uecnp1edrekb1.jpeg<>uid://542m08y7pian::::res://level_markers/level_start/level_start.tscn<>uid://csfbeum1qth12::::res://level_designs/level_2.tscn<>uid://dixij07esi4ra::::res://spike.tscn<>uid://n4s76clit5dp::::res://spike2.tscn<>uid://b8iylcwee1uey::::res://turtle.tscn<>uid://dylwb3e1u3r7r::::res://wenbi.tscn<>uid://de4h0vfrkjxc0::::res://portal.png<>uid://c1eir0j67vbt4::::res://level_markers/level_end/level_end2.tscn<>uid://dxm5or233d1fc::::res://player/red_sign.png<>uid://c4q17fjf0rim4::::res://player/blue_sign.png<>uid://c5dg4yewo6biv::::res://player/yellow_sign.png
+main_game2.tscn::PackedScene::3562561292658689015::1718232709::0::1::::<><>::res://main_game2.gd<>uid://c7cospx0xchne::::res://player/player.tscn<>uid://4psi25sn7y0w::::res://PauseMenu.tscn<>uid://cmlyc6t228otu::::res://level_markers/level_reset/level_reset_area.tscn<>uid://doekmxlr0w7w8::::res://2d-dark-forest-parallax-background-in-pixel-art-great-for-v0-uecnp1edrekb1.jpeg<>uid://542m08y7pian::::res://level_markers/level_start/level_start.tscn<>uid://csfbeum1qth12::::res://level_designs/level_2.tscn<>uid://dixij07esi4ra::::res://spike.tscn<>uid://n4s76clit5dp::::res://spike2.tscn<>uid://b8iylcwee1uey::::res://turtle.tscn<>uid://dylwb3e1u3r7r::::res://wenbi.tscn<>uid://de4h0vfrkjxc0::::res://portal.png<>uid://c1eir0j67vbt4::::res://level_markers/level_end/level_end2.tscn<>uid://dxm5or233d1fc::::res://player/red_sign.png<>uid://c4q17fjf0rim4::::res://player/blue_sign.png<>uid://c5dg4yewo6biv::::res://player/yellow_sign.png
 main_game.gd::GDScript::-1::1717310127::0::1::::<>Node2D<>::
-main_game.tscn::PackedScene::7686566814340802628::1718112272::0::1::::<><>::res://main_game.gd<>uid://cfojx3gbngwmv::::res://level_designs/level_1.tscn<>uid://c7cospx0xchne::::res://player/player.tscn<>uid://b0x0wce4cgu76::::res://Free Pixel Art Forest/Preview/Background.png<>uid://cmlyc6t228otu::::res://level_markers/level_reset/level_reset_area.tscn<>uid://542m08y7pian::::res://level_markers/level_start/level_start.tscn<>uid://d4nls2u54ty2q::::res://level_markers/level_end/level_end.tscn<>uid://4psi25sn7y0w::::res://PauseMenu.tscn<>uid://wi8ar2visryg::::res://left.png<>uid://ca01fkk2hytce::::res://_pixel_adventure_1/Free/Traps/Spike Head/right.png
-menu.gd::GDScript::-1::1715303102::0::1::::<>Control<>::
-menu.tscn::PackedScene::9170682104333281848::1715924192::0::1::::<><>::res://menu.gd<>uid://bllt806y6he3s::::res://bg_settings.tscn<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf
+main_game.tscn::PackedScene::7686566814340802628::1718238022::0::1::::<><>::res://main_game.gd<>uid://cfojx3gbngwmv::::res://level_designs/level_1.tscn<>uid://c7cospx0xchne::::res://player/player.tscn<>uid://b0x0wce4cgu76::::res://Free Pixel Art Forest/Preview/Background.png<>uid://cmlyc6t228otu::::res://level_markers/level_reset/level_reset_area.tscn<>uid://542m08y7pian::::res://level_markers/level_start/level_start.tscn<>uid://d4nls2u54ty2q::::res://level_markers/level_end/level_end.tscn<>uid://4psi25sn7y0w::::res://PauseMenu.tscn<>uid://wi8ar2visryg::::res://left.png<>uid://ca01fkk2hytce::::res://_pixel_adventure_1/Free/Traps/Spike Head/right.png
+menu.gd::GDScript::-1::1718235518::0::1::::<>Control<>::
+menu.tscn::PackedScene::9170682104333281848::1718238022::0::1::::<><>::res://menu.gd<>uid://bllt806y6he3s::::res://bg_settings.tscn<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf
 MicrosoftTeams-image (1).png::CompressedTexture2D::6014021310914995619::1712884994::1714093255::1::::<><>::
+MicrosoftTeams-image (19).png::CompressedTexture2D::446028472254571220::1718233943::1718233943::1::::<><>::
 Mos1.png::CompressedTexture2D::8221930062330168159::1717310127::1717310127::1::::<><>::
 mos2.png::CompressedTexture2D::5420064058216821790::1717310127::1717310127::1::::<><>::
 mos3.png::CompressedTexture2D::7841063809514355504::1717310127::1717310127::1::::<><>::
@@ -80,6 +83,7 @@ spike2.tscn::PackedScene::973473605261632741::1718162915::0::1::::<><>::res://Sp
 Spike.gd::GDScript::-1::1716348627::0::1::::<>Area2D<>::
 spike.tscn::PackedScene::7768756659337852054::1717310223::0::1::::<><>::res://Spike.gd<>uid://bycdiwnvx5ulv::::res://Idle.png
 spotifydown.com - bee..mp3::AudioStreamMP3::9051558394435195571::1712884215::1714093254::1::::<><>::
+spotifydown.com - Talent Shredder.mp3::AudioStreamMP3::2567552145214556502::1714139294::1718235042::1::::<><>::
 spotifydown.com - カラカラカラのカラ STuPiD DaNCe ReMiX (feat. 初音ミク).mp3::AudioStreamMP3::7099565131420687077::1712883216::1714093254::1::::<><>::
 sr2f2008a7336aws3-1 (dragged).png::CompressedTexture2D::4580132636518118396::1712805462::1714093255::1::::<><>::
 timer.gd::GDScript::-1::1718104773::0::1::::<>CanvasLayer<>::
@@ -91,10 +95,13 @@ wenbi.gd::GDScript::-1::1718104773::0::1::::<>Node2D<>::
 wenbi.tscn::PackedScene::8867841491363695733::1718152686::0::1::::<><>::res://wenbi.gd<>uid://dsxfod6j3r4nf::::res://Hanlin.png
 win animation.png::CompressedTexture2D::1722705715506879734::1713313474::1714093255::1::::<><>::
 win music.mp3::AudioStreamMP3::5706008748640480525::1712882663::1714093254::1::::<><>::
-win_music.tscn::PackedScene::4593561904804896487::1714015712::0::1::::<><>::uid://cnkbeo1qyaprp::::res://win music.mp3
-::res://cutscenes/::1718111126
+win_music.tscn::PackedScene::4593561904804896487::1718232709::0::1::::<><>::uid://cnkbeo1qyaprp::::res://win music.mp3
+zrbue2z2zyr31.png::CompressedTexture2D::5875842263824298999::1718199679::1718199593::1::::<><>::
+::res://cutscenes/::1718246571
 cutscene2.ogv::VideoStreamTheora::-1::1718109040::0::1::::<><>::
+cutscene low budget.mp3::AudioStreamMP3::878681022178966486::1718246533::1718246572::1::::<><>::
 cutscene-forest.ogv::VideoStreamTheora::-1::1718109063::0::1::::<><>::
+cutscene-low-budget.ogv::VideoStreamTheora::-1::1718237334::0::1::::<><>::
 opening cutscene audio that yejun approves of.mp3::AudioStreamMP3::944043180581296404::1715851162::1715851164::1::::<><>::
 opening cutscene audio.mp3::AudioStreamMP3::3502079904813244044::1715230474::1715230495::1::::<><>::
 opening-cutscene.ogv::VideoStreamTheora::-1::1715225498::0::1::::<><>::
@@ -126,10 +133,11 @@ Pixel Art Forest.png::CompressedTexture2D::4638423396435942071::1587989992::1714
 Pixel Art Plataformer Painted Style.png::CompressedTexture2D::2427758055415586162::1587990596::1714093255::1::::<><>::
 Pixel Art Runner.png::CompressedTexture2D::4504484264795850647::1587989818::1714093255::1::::<><>::
 Pixel Art Snowy Forest.png::CompressedTexture2D::1843196401795371844::1587990264::1714093255::1::::<><>::
-::res://level_designs/::1718176371
+::res://level_designs/::1718238021
+fight_music.tscn::PackedScene::6298111739964304058::1718238021::0::1::::<><>::uid://bct0hdjbribe1::::res://spotifydown.com - Talent Shredder.mp3
 level_1.tscn::PackedScene::5153275880313611685::1718111864::0::1::::<><>::uid://c76gur0v4bv0e::::res://_pixel_adventure_1/Free/Terrain/Terrain (16x16).png<>uid://dixij07esi4ra::::res://spike.tscn<>uid://nampiiwgg3p6::::res://enemy.tscn
 level_2.tscn::PackedScene::6046631372017584003::1718166015::0::1::::<><>::uid://dpe08s3vm3i5d::::res://Mos1.png<>uid://cjhrwsu0k85r3::::res://mos2.png<>uid://djyjf7x6drtee::::res://mos3.png<>uid://bxdsloadcobws::::res://mos4.png<>uid://ds4te4pmyi46y::::res://mos5.png<>uid://dntsnksl4wmp::::res://mos6.png<>uid://ca01fkk2hytce::::res://_pixel_adventure_1/Free/Traps/Spike Head/right.png<>uid://wi8ar2visryg::::res://left.png<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf
-level_4.tscn::PackedScene::1708355808629362708::1718176371::0::1::::<><>::uid://c76gur0v4bv0e::::res://_pixel_adventure_1/Free/Terrain/Terrain (16x16).png<>uid://nampiiwgg3p6::::res://enemy.tscn<>uid://dixij07esi4ra::::res://spike.tscn
+level_4.tscn::PackedScene::1708355808629362708::1718232709::0::1::::<><>::uid://c76gur0v4bv0e::::res://_pixel_adventure_1/Free/Terrain/Terrain (16x16).png
 ::res://level_designs/Tiles/::1717310127
 arch_1.png::CompressedTexture2D::4454023016106795370::1715304606::1715304606::1::::<><>::
 arch_2.png::CompressedTexture2D::6626380950947840473::1715304606::1715304606::1::::<><>::
@@ -290,24 +298,26 @@ window_tall_2.png::CompressedTexture2D::8038196034080822324::1715304606::1715304
 window_tall_3.png::CompressedTexture2D::7948025960846273488::1715304606::1715304606::1::::<><>::
 ::res://level_markers/::1717310127
 enemy.tscn::PackedScene::9210781614792373773::1715924192::0::1::::<><>::
-::res://level_markers/level_end/::1718176371
-level_end2.gd::GDScript::-1::1718176193::0::1::::<>Area2D<>::
-level_end2.tscn::PackedScene::6606526235868879599::1718176370::0::1::::<><>::res://level_markers/level_end/level_end2.gd<>uid://bgtllixtlsdoe::::res://_pixel_adventure_1/Free/Items/Checkpoints/End/End (Idle).png<>uid://b6pfj8hsifg6j::::res://win_music.tscn<>uid://28tmfhjm4rd7::::res://sound_effects/win.wav
-level_end.gd::GDScript::-1::1718110404::0::1::::<>Area2D<>::
-level_end.tscn::PackedScene::9222276909024872750::1718176371::0::1::::<><>::uid://bgtllixtlsdoe::::res://_pixel_adventure_1/Free/Items/Checkpoints/End/End (Idle).png<>res://level_markers/level_end/level_end.gd<>uid://b6pfj8hsifg6j::::res://win_music.tscn<>uid://28tmfhjm4rd7::::res://sound_effects/win.wav
-main_game3.gd::GDScript::-1::1718112708::0::1::::<>Node2D<>::
-main_game3.tscn::PackedScene::1475770228240986512::1718112626::0::1::::<><>::res://level_markers/level_end/main_game3.gd<>uid://b0x0wce4cgu76::::res://Free Pixel Art Forest/Preview/Background.png<>uid://cfojx3gbngwmv::::res://level_designs/level_1.tscn<>uid://c7cospx0xchne::::res://player/player.tscn<>uid://4psi25sn7y0w::::res://PauseMenu.tscn<>uid://cmlyc6t228otu::::res://level_markers/level_reset/level_reset_area.tscn<>uid://542m08y7pian::::res://level_markers/level_start/level_start.tscn<>uid://d4nls2u54ty2q::::res://level_markers/level_end/level_end.tscn<>uid://wi8ar2visryg::::res://left.png<>uid://ca01fkk2hytce::::res://_pixel_adventure_1/Free/Traps/Spike Head/right.png
-main_game4.tscn::PackedScene::577740868357093833::1718176370::0::1::::<><>::res://level_markers/level_end/main_game3.gd<>uid://b0x0wce4cgu76::::res://Free Pixel Art Forest/Preview/Background.png<>uid://cfojx3gbngwmv::::res://level_designs/level_1.tscn<>uid://c7cospx0xchne::::res://player/player.tscn<>uid://4psi25sn7y0w::::res://PauseMenu.tscn<>uid://cmlyc6t228otu::::res://level_markers/level_reset/level_reset_area.tscn<>uid://542m08y7pian::::res://level_markers/level_start/level_start.tscn<>uid://d4nls2u54ty2q::::res://level_markers/level_end/level_end.tscn<>uid://wi8ar2visryg::::res://left.png<>uid://ca01fkk2hytce::::res://_pixel_adventure_1/Free/Traps/Spike Head/right.png
+::res://level_markers/level_end/::1718238022
+level_end2.gd::GDScript::-1::1718176862::0::1::::<>Area2D<>::
+level_end2.tscn::PackedScene::6606526235868879599::1718232709::0::1::::<><>::res://level_markers/level_end/level_end2.gd<>uid://bgtllixtlsdoe::::res://_pixel_adventure_1/Free/Items/Checkpoints/End/End (Idle).png<>uid://b6pfj8hsifg6j::::res://win_music.tscn<>uid://dpvilvrwcvu7y::::res://Children Yay! - Sound Effect.mp3
+level_end.gd::GDScript::-1::1718176944::0::1::::<>Area2D<>::
+level_end.tscn::PackedScene::9222276909024872750::1718232709::0::1::::<><>::uid://bgtllixtlsdoe::::res://_pixel_adventure_1/Free/Items/Checkpoints/End/End (Idle).png<>res://level_markers/level_end/level_end.gd<>uid://b6pfj8hsifg6j::::res://win_music.tscn<>uid://28tmfhjm4rd7::::res://sound_effects/win.wav
+main_game3.gd::GDScript::-1::1718235350::0::1::::<>Node2D<>::
+main_game3.tscn::PackedScene::1475770228240986512::1718238022::0::1::::<><>::res://level_markers/level_end/main_game3.gd<>uid://b0x0wce4cgu76::::res://Free Pixel Art Forest/Preview/Background.png<>uid://cfojx3gbngwmv::::res://level_designs/level_1.tscn<>uid://c7cospx0xchne::::res://player/player.tscn<>uid://4psi25sn7y0w::::res://PauseMenu.tscn<>uid://cmlyc6t228otu::::res://level_markers/level_reset/level_reset_area.tscn<>uid://542m08y7pian::::res://level_markers/level_start/level_start.tscn<>uid://d4nls2u54ty2q::::res://level_markers/level_end/level_end.tscn<>uid://wi8ar2visryg::::res://left.png<>uid://ca01fkk2hytce::::res://_pixel_adventure_1/Free/Traps/Spike Head/right.png
+main_game4.tscn::PackedScene::577740868357093833::1718238021::0::1::::<><>::res://level_markers/level_end/main_game3.gd<>uid://b0x0wce4cgu76::::res://Free Pixel Art Forest/Preview/Background.png<>uid://c7cospx0xchne::::res://player/player.tscn<>uid://ylsmunbwy42k::::res://level_designs/level_4.tscn<>uid://4psi25sn7y0w::::res://PauseMenu.tscn<>uid://cmlyc6t228otu::::res://level_markers/level_reset/level_reset_area.tscn<>uid://mdc4cyk7dle1::::res://level_markers/level_end/level_end3.tscn<>uid://cpyki70cy023l::::res://zrbue2z2zyr31.png
+level_end3.tscn::PackedScene::848632621546596902::1718234053::0::1::::<><>::res://level_markers/level_end/level_end3.gd<>uid://gmca2ql8xiee::::res://MicrosoftTeams-image (19).png<>uid://b6pfj8hsifg6j::::res://win_music.tscn<>uid://dpvilvrwcvu7y::::res://Children Yay! - Sound Effect.mp3
+level_end3.gd::GDScript::-1::1718235268::0::1::::<>Area2D<>::
 ::res://level_markers/level_reset/::1713867096
 level_reset_area.gd::GDScript::-1::1712804609::0::1::::<>Area2D<>::
 level_reset_area.tscn::PackedScene::5639278084590742954::1713867096::0::1::::<><>::res://level_markers/level_reset/level_reset_area.gd<>uid://ddw42ygg134gg::::res://sound_effects/lose.wav
-::res://level_markers/level_start/::1713867096
-level_start.tscn::PackedScene::2167194417536369381::1713867096::0::1::::<><>::uid://c0rt6nsa1axrk::::res://_pixel_adventure_1/Free/Items/Checkpoints/Start/Start (Idle).png
+::res://level_markers/level_start/::1718238022
+level_start.tscn::PackedScene::2167194417536369381::1718238022::0::1::::<><>::uid://c0rt6nsa1axrk::::res://_pixel_adventure_1/Free/Items/Checkpoints/Start/Start (Idle).png
 ::res://obstacle/::1712804609
-::res://player/::1718176370
+::res://player/::1718238021
 blue_sign.png::CompressedTexture2D::6842983940952236237::1718163579::1718163580::1::::<><>::
 player.gd::GDScript::-1::1717310127::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::7023896126047838778::1718176370::0::1::::<><>::res://player/player.gd<>uid://crxib1q3e8t12::::res://MicrosoftTeams-image (1).png<>uid://d0ds7utrerrc4::::res://die.png<>uid://dkfgfdw6qnsxq::::res://penguin left.png<>uid://bn47movckifct::::res://explode.png<>uid://7oibtok7i6h6::::res://penguin right.png<>uid://ysqygoufhpja::::res://win animation.png<>uid://csrta260gebja::::res://Speedrun_timer.tscn<>uid://djpu0b0v20353::::res://jump.mp3<>uid://ddamkmaxseyl::::res://diemusic.tscn
+player.tscn::PackedScene::7023896126047838778::1718238021::0::1::::<><>::res://player/player.gd<>uid://crxib1q3e8t12::::res://MicrosoftTeams-image (1).png<>uid://d0ds7utrerrc4::::res://die.png<>uid://dkfgfdw6qnsxq::::res://penguin left.png<>uid://bn47movckifct::::res://explode.png<>uid://7oibtok7i6h6::::res://penguin right.png<>uid://ysqygoufhpja::::res://win animation.png<>uid://csrta260gebja::::res://Speedrun_timer.tscn<>uid://djpu0b0v20353::::res://jump.mp3<>uid://ddamkmaxseyl::::res://diemusic.tscn
 red_sign.png::CompressedTexture2D::8800225434616856876::1718163040::1718163040::1::::<><>::
 yellow_sign.png::CompressedTexture2D::6885117167528322753::1718163616::1718163617::1::::<><>::
 ::res://sound_effects/::1714093255

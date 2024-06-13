@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://dbcht5ahkx4o"]
+
+[ext_resource type="VideoStream" path="res://cutscenes/cutscene-low-budget.ogv" id="1_pbrw5"]
+[ext_resource type="Script" path="res://cutscene_final.gd" id="2_xbnm2"]
+[ext_resource type="FontFile" uid="uid://bumelrknnwxkf" path="res://8-bit-hud.ttf" id="3_bht56"]
+[ext_resource type="AudioStream" uid="uid://mrv0o0xl3n8q" path="res://cutscenes/cutscene low budget.mp3" id="4_jcctd"]
+[ext_resource type="Texture2D" uid="uid://bkfvg4h1kl2em" path="res://Screenshot 2023-05-31 at 5.35.21 PM.jpg" id="5_jw13s"]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer"]
+offset_left = -3.0
+offset_top = 24.0
+offset_right = 1917.0
+offset_bottom = 1112.0
+scale = Vector2(0.17, 0.17)
+stream = ExtResource("1_pbrw5")
+volume_db = -80.0
+autoplay = true
+script = ExtResource("2_xbnm2")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1088.24
+offset_top = 1194.12
+offset_right = 1880.24
+offset_bottom = 1258.12
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 62
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("3_bht56")
+theme_override_font_sizes/font_size = 30
+text = "no skipping"
+horizontal_alignment = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_jcctd")
+autoplay = true
+
+[node name="Screenshot2023-05-31At5_35_21Pm" type="Sprite2D" parent="."]
+z_index = -6
+z_as_relative = false
+position = Vector2(1376.47, 670.588)
+scale = Vector2(1.67034, 1.35294)
+texture = ExtResource("5_jw13s")
+
+[connection signal="finished" from="." to="." method="_on_finished"]

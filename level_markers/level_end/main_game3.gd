@@ -5,7 +5,8 @@ extends Node2D
 #get_viewport().canvas_transform = Transform2D.IDENTITY
 
 func _ready():
-	BgMusic.play()
+	FightMusic.play()
+	BgMusic.stop()
 
 
 
