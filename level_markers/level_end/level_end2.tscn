@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://c1eir0j67vbt4"]
+
+[ext_resource type="Script" path="res://level_markers/level_end/level_end2.gd" id="1_egqox"]
+[ext_resource type="Texture2D" uid="uid://bgtllixtlsdoe" path="res://_pixel_adventure_1/Free/Items/Checkpoints/End/End (Idle).png" id="2_qnp6i"]
+[ext_resource type="PackedScene" uid="uid://b6pfj8hsifg6j" path="res://win_music.tscn" id="3_pikgs"]
+[ext_resource type="AudioStream" uid="uid://dpvilvrwcvu7y" path="res://Children Yay! - Sound Effect.mp3" id="4_gnmfl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j0vln"]
+size = Vector2(44, 42)
+
+[node name="LevelEnd" type="Area2D"]
+script = ExtResource("1_egqox")
+
+[node name="Trophy" type="Sprite2D" parent="."]
+texture = ExtResource("2_qnp6i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 11)
+shape = SubResource("RectangleShape2D_j0vln")
+
+[node name="win_music" parent="." instance=ExtResource("3_pikgs")]
+stream = ExtResource("4_gnmfl")
+volume_db = 1.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="finished" from="win_music" to="." method="_on_win_music_finished"]

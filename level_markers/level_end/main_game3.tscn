@@ -1,0 +1,131 @@
+[gd_scene load_steps=12 format=3 uid="uid://va4yqmx6q6js"]
+
+[ext_resource type="Script" path="res://level_markers/level_end/main_game3.gd" id="1_yt7kp"]
+[ext_resource type="Texture2D" uid="uid://b0x0wce4cgu76" path="res://Free Pixel Art Forest/Preview/Background.png" id="2_1fyef"]
+[ext_resource type="PackedScene" uid="uid://cfojx3gbngwmv" path="res://level_designs/level_1.tscn" id="3_4d7m7"]
+[ext_resource type="PackedScene" uid="uid://c7cospx0xchne" path="res://player/player.tscn" id="4_epd08"]
+[ext_resource type="PackedScene" uid="uid://4psi25sn7y0w" path="res://PauseMenu.tscn" id="5_vhd2l"]
+[ext_resource type="PackedScene" uid="uid://cmlyc6t228otu" path="res://level_markers/level_reset/level_reset_area.tscn" id="6_uu6xk"]
+[ext_resource type="PackedScene" uid="uid://542m08y7pian" path="res://level_markers/level_start/level_start.tscn" id="7_2xc7j"]
+[ext_resource type="PackedScene" uid="uid://d4nls2u54ty2q" path="res://level_markers/level_end/level_end.tscn" id="8_w1cvh"]
+[ext_resource type="Texture2D" uid="uid://wi8ar2visryg" path="res://left.png" id="9_c2aek"]
+[ext_resource type="Texture2D" uid="uid://ca01fkk2hytce" path="res://_pixel_adventure_1/Free/Traps/Spike Head/right.png" id="10_a4h84"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ldtb2"]
+size = Vector2(4224, 51)
+
+[node name="MainGame" type="Node2D"]
+script = ExtResource("1_yt7kp")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+z_index = -1
+z_as_relative = false
+offset_left = -204.0
+offset_top = -137.0
+offset_right = 2140.0
+offset_bottom = 656.0
+texture = ExtResource("2_1fyef")
+stretch_mode = 4
+
+[node name="Level1" parent="." instance=ExtResource("3_4d7m7")]
+
+[node name="Label2" type="Label" parent="Level1"]
+offset_left = 1438.0
+offset_top = 343.0
+offset_right = 1635.0
+offset_bottom = 382.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 13
+theme_override_font_sizes/font_size = 10
+text = "dont jump here
+theres a bug"
+horizontal_alignment = 2
+
+[node name="Label3" type="Label" parent="Level1"]
+offset_left = 439.0
+offset_top = 199.0
+offset_right = 636.0
+offset_bottom = 238.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 13
+theme_override_font_sizes/font_size = 13
+text = "dont fall down
+you will die"
+
+[node name="Label" type="Label" parent="Level1"]
+offset_left = 905.0
+offset_top = 447.0
+offset_right = 1102.0
+offset_bottom = 470.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 13
+theme_override_font_sizes/font_size = 13
+text = "You can double jump btw"
+
+[node name="Label4" type="Label" parent="Level1"]
+offset_left = 197.0
+offset_top = 140.0
+offset_right = 394.0
+offset_bottom = 163.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 13
+theme_override_font_sizes/font_size = 13
+text = "hi"
+
+[node name="Player" parent="." instance=ExtResource("4_epd08")]
+z_index = 1
+position = Vector2(24, 133)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("5_vhd2l")]
+
+[node name="LevelResetArea" parent="." instance=ExtResource("6_uu6xk")]
+position = Vector2(714, 509)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LevelResetArea"]
+position = Vector2(63, 519)
+shape = SubResource("RectangleShape2D_ldtb2")
+
+[node name="LevelStart" parent="." instance=ExtResource("7_2xc7j")]
+position = Vector2(12, 113)
+
+[node name="LevelEnd" parent="." instance=ExtResource("8_w1cvh")]
+position = Vector2(1688, 64)
+metadata/_edit_group_ = true
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_offset = Vector2(10, 2.08165e-12)
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(793, 2.08165e-12)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(297, -48)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("2_1fyef")
+
+[node name="Left" type="Sprite2D" parent="."]
+position = Vector2(502, 297)
+rotation = -0.261799
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("9_c2aek")
+
+[node name="Right2" type="Sprite2D" parent="."]
+position = Vector2(1136, 438)
+rotation = -0.15708
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("10_a4h84")
+
+[node name="Right3" type="Sprite2D" parent="."]
+position = Vector2(553, 469)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("10_a4h84")
+
+[connection signal="body_entered" from="LevelResetArea" to="." method="_on_level_reset_area_body_entered"]
+[connection signal="body_entered" from="LevelEnd" to="." method="_on_level_end_body_entered"]

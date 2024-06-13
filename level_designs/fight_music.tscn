@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvy38ldpjvn6q"]
+
+[ext_resource type="AudioStream" uid="uid://bct0hdjbribe1" path="res://spotifydown.com - Talent Shredder.mp3" id="1_eag7q"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_eag7q")
+autoplay = true
+bus = &"Music"

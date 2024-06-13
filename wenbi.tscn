@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dsxfod6j3r4nf" path="res://Hanlin.png" id="1_ne66m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nl37f"]
-size = Vector2(53, 53)
+size = Vector2(50, 53)
 
 [sub_resource type="Animation" id="Animation_kuwpq"]
 length = 0.001
@@ -55,7 +55,7 @@ scale = Vector2(0.0428082, 0.0354278)
 texture = ExtResource("1_ne66m")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(57.5, 47.5)
+position = Vector2(58, 47.5)
 shape = SubResource("RectangleShape2D_nl37f")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

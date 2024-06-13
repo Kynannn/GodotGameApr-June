@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://dblkrpkei3gng"]
+
+[ext_resource type="VideoStream" path="res://cutscenes/cutscene-forest.ogv" id="1_j1ruh"]
+[ext_resource type="Script" path="res://cutscene_forest.gd" id="2_4rn3j"]
+[ext_resource type="AudioStream" uid="uid://grkpsij0mkyq" path="res://cutscene forest.mp3" id="2_5rjfb"]
+[ext_resource type="Texture2D" uid="uid://bkfvg4h1kl2em" path="res://Screenshot 2023-05-31 at 5.35.21 PM.jpg" id="2_oglfa"]
+[ext_resource type="FontFile" uid="uid://bumelrknnwxkf" path="res://8-bit-hud.ttf" id="3_1csiw"]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer"]
+offset_left = -3.0
+offset_top = 26.0
+offset_right = 1917.0
+offset_bottom = 1114.0
+scale = Vector2(0.17, 0.17)
+stream = ExtResource("1_j1ruh")
+volume_db = -80.0
+autoplay = true
+script = ExtResource("2_4rn3j")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1094.12
+offset_top = 1182.35
+offset_right = 1886.12
+offset_bottom = 1246.35
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 62
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("3_1csiw")
+theme_override_font_sizes/font_size = 30
+text = "Can't skip this btw"
+horizontal_alignment = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_5rjfb")
+autoplay = true
+
+[node name="Screenshot2023-05-31At5_35_21Pm" type="Sprite2D" parent="."]
+z_index = -6
+z_as_relative = false
+position = Vector2(1376.47, 670.588)
+scale = Vector2(1.67034, 1.35294)
+texture = ExtResource("2_oglfa")
+
+[connection signal="finished" from="." to="." method="_on_finished"]
