@@ -9,4 +9,4 @@ func _ready():
 		#get_tree().change_scene_to_file("res://main_game.tscn")
 
 func _on_finished():
-	get_tree().change_scene_to_file("res://.tscn")
+	get_tree().change_scene_to_file("res://level_markers/level_end/FinalTime.tscn")

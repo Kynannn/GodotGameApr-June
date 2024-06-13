@@ -1,6 +1,10 @@
-Camera2D
 AudioStreamPlayer
 Label
+VBoxContainer
+MarginContainer
+Button
+Control
+Camera2D
 Sprite2D
 VideoStreamPlayer
 Area2D
@@ -8,7 +12,3 @@ CollisionShape2D
 TextEdit
 AnimationPlayer
 AnimationTree
-CharacterBody2D
-Node2D
-Timer
-DirectionalLight2D

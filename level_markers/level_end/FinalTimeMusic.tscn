@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://finsewq07op3"]
+
+[ext_resource type="AudioStream" uid="uid://dx1yon2scaqk8" path="res://yt5s.com - Staff Collection - Kirby Mass Attack (128 kbps).mp3" id="1_moh4v"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_moh4v")
+autoplay = true

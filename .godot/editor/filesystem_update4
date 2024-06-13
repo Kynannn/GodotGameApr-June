@@ -19,3 +19,8 @@ res://cutscene_forest.tscn
 res://menu.tscn
 res://menu.gd
 res://level_menu.tscn
+res://FinalTime.gd
+res://level_markers/level_end/FinalTime.tscn
+res://spike2.tscn
+res://level_designs/level_1.tscn
+res://level_markers/level_end/FinalTimeMusic.tscn
