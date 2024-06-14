@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1718289331
+::res://::1718335243
 2d-dark-forest-parallax-background-in-pixel-art-great-for-v0-uecnp1edrekb1.jpeg::CompressedTexture2D::8150793198319133997::1718247294::1718247294::1::::<><>::
 8-bit-hud.ttf::FontFile::3815233510160406869::1714093765::1714093829::1::::<><>::
 8bit16 2.ttf::FontFile::3254475331149737015::1714093765::1714093829::1::::<><>::
@@ -11,6 +11,7 @@ Background.png::CompressedTexture2D::8805641083346111047::1714093765::1714093829
 bg_music.gd::GDScript::-1::1715223699::0::1::::<>AudioStreamPlayer<>::
 bg_music.tscn::PackedScene::6026150773730630763::1716973222::0::1::::<><>::uid://d17v3yav816qx::::res://spotifydown.com - bee..mp3<>res://bg_music.gd
 bg_settings.tscn::PackedScene::3182420035172387010::1714093765::0::1::::<><>::uid://c60c10cy5xaj1::::res://Background copy.png
+blue.png::CompressedTexture2D::6456820959357517726::1718333896::1718333896::1::::<><>::
 bullet.tscn::PackedScene::6467804407996747204::1718281044::0::1::::<><>::res://bullet.gd<>res://level_markers/level_start/red_bullet.png
 Children Yay! - Sound Effect.mp3::AudioStreamMP3::8255953148415259504::1718247294::1718247294::1::::<><>::
 Creds.gd::GDScript::-1::1714093765::0::1::::<>Control<>::
@@ -39,7 +40,7 @@ FinalTime.gd::GDScript::-1::1718280229::0::1::::<>Control<>::
 final_gojo.gd::GDScript::-1::1718284416::0::1::::<>CharacterBody2D<>::
 final_gojo.tscn::PackedScene::4511930756404017735::1718285537::0::1::::<><>::res://final_gojo.gd<>uid://clojppl1be2r8::::res://_pixel_adventure_1/Free/Traps/Trampoline/idleg.png<>res://FSM.gd<>res://idle.gd
 FSM.gd::GDScript::-1::1718283549::0::1::::FSM<>Node2D<>::
-Global.gd::GDScript::-1::1715304485::0::1::::<>Node<>::
+Global.gd::GDScript::-1::1718325754::0::1::::<>Node<>::
 Hanlin.png::CompressedTexture2D::8470470716891787483::1716975580::1716975580::1::::<><>::
 how_2_play.gd::GDScript::-1::1714093765::0::1::::<>Control<>::
 how_2_play.tscn::PackedScene::7305742181587109412::1714093765::0::1::::<><>::uid://bllt806y6he3s::::res://bg_settings.tscn<>res://how_2_play.gd<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf<>uid://bmmqy6upjbhqd::::res://8bit16 2.ttf
@@ -55,9 +56,9 @@ left.png::CompressedTexture2D::1562674178402718186::1717060871::1717060871::1:::
 level_menu.gd::GDScript::-1::1715301872::0::1::::<>Control<>::
 level_menu.tscn::PackedScene::6334978653688796728::1716262449::0::1::::<><>::res://level_menu.gd
 main_game2.gd::GDScript::-1::1718280227::0::1::::<>Node2D<>::
-main_game2.tscn::PackedScene::3562561292658689015::1718280227::0::1::::<><>::res://main_game2.gd<>uid://c7cospx0xchne::::res://player/player.tscn<>uid://4psi25sn7y0w::::res://PauseMenu.tscn<>uid://cmlyc6t228otu::::res://level_markers/level_reset/level_reset_area.tscn<>uid://doekmxlr0w7w8::::res://2d-dark-forest-parallax-background-in-pixel-art-great-for-v0-uecnp1edrekb1.jpeg<>uid://542m08y7pian::::res://level_markers/level_start/level_start.tscn<>uid://csfbeum1qth12::::res://level_designs/level_2.tscn<>uid://dixij07esi4ra::::res://spike.tscn<>uid://n4s76clit5dp::::res://spike2.tscn<>uid://b8iylcwee1uey::::res://turtle.tscn<>uid://dylwb3e1u3r7r::::res://wenbi.tscn<>uid://de4h0vfrkjxc0::::res://portal.png<>uid://c1eir0j67vbt4::::res://level_markers/level_end/level_end2.tscn<>uid://dxm5or233d1fc::::res://player/red_sign.png<>uid://c4q17fjf0rim4::::res://player/blue_sign.png<>uid://c5dg4yewo6biv::::res://player/yellow_sign.png
-main_game.gd::GDScript::-1::1716455628::0::1::::<>Node2D<>::
-main_game.tscn::PackedScene::7686566814340802628::1718247333::0::1::::<><>::res://main_game.gd<>uid://cfojx3gbngwmv::::res://level_designs/level_1.tscn<>uid://c7cospx0xchne::::res://player/player.tscn<>uid://b0x0wce4cgu76::::res://Free Pixel Art Forest/Preview/Background.png<>uid://cmlyc6t228otu::::res://level_markers/level_reset/level_reset_area.tscn<>uid://542m08y7pian::::res://level_markers/level_start/level_start.tscn<>uid://d4nls2u54ty2q::::res://level_markers/level_end/level_end.tscn<>uid://4psi25sn7y0w::::res://PauseMenu.tscn<>uid://wi8ar2visryg::::res://left.png<>uid://ca01fkk2hytce::::res://_pixel_adventure_1/Free/Traps/Spike Head/right.png
+main_game2.tscn::PackedScene::3562561292658689015::1718325754::0::1::::<><>::res://main_game2.gd<>uid://c7cospx0xchne::::res://player/player.tscn<>uid://4psi25sn7y0w::::res://PauseMenu.tscn<>uid://cmlyc6t228otu::::res://level_markers/level_reset/level_reset_area.tscn<>uid://doekmxlr0w7w8::::res://2d-dark-forest-parallax-background-in-pixel-art-great-for-v0-uecnp1edrekb1.jpeg<>uid://542m08y7pian::::res://level_markers/level_start/level_start.tscn<>uid://csfbeum1qth12::::res://level_designs/level_2.tscn<>uid://dixij07esi4ra::::res://spike.tscn<>uid://n4s76clit5dp::::res://spike2.tscn<>uid://b8iylcwee1uey::::res://turtle.tscn<>uid://dylwb3e1u3r7r::::res://wenbi.tscn<>uid://de4h0vfrkjxc0::::res://portal.png<>uid://c1eir0j67vbt4::::res://level_markers/level_end/level_end2.tscn<>uid://dxm5or233d1fc::::res://player/red_sign.png<>uid://c4q17fjf0rim4::::res://player/blue_sign.png<>uid://c5dg4yewo6biv::::res://player/yellow_sign.png
+main_game.gd::GDScript::-1::1718328379::0::1::::<>Node2D<>::
+main_game.tscn::PackedScene::7686566814340802628::1718335118::0::1::::<><>::res://main_game.gd<>uid://cfojx3gbngwmv::::res://level_designs/level_1.tscn<>uid://c7cospx0xchne::::res://player/player.tscn<>uid://b0x0wce4cgu76::::res://Free Pixel Art Forest/Preview/Background.png<>uid://cmlyc6t228otu::::res://level_markers/level_reset/level_reset_area.tscn<>uid://542m08y7pian::::res://level_markers/level_start/level_start.tscn<>uid://d4nls2u54ty2q::::res://level_markers/level_end/level_end.tscn<>uid://4psi25sn7y0w::::res://PauseMenu.tscn<>uid://wi8ar2visryg::::res://left.png<>uid://ca01fkk2hytce::::res://_pixel_adventure_1/Free/Traps/Spike Head/right.png
 menu.gd::GDScript::-1::1718280229::0::1::::<>Control<>::
 menu.tscn::PackedScene::9170682104333281848::1718247333::0::1::::<><>::res://menu.gd<>uid://bllt806y6he3s::::res://bg_settings.tscn<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf
 MicrosoftTeams-image (1).png::CompressedTexture2D::6014021310914995619::1714093765::1714093829::1::::<><>::
@@ -79,11 +80,13 @@ noise.mp3::AudioStreamMP3::5332753412040231007::1714093765::1714093829::1::::<><
 options.gd::GDScript::-1::1714093765::0::1::::<>Control<>::
 options.tscn::PackedScene::3926661732705015207::1715051928::0::1::::<><>::res://options.gd<>uid://bllt806y6he3s::::res://bg_settings.tscn<>uid://cflks4p1urdv1::::res://volume_slider.tscn<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf<>uid://ch8hw1a3g6vjb::::res://noise.mp3
 PauseMenu.gdshader::Shader::-1::1714093765::0::1::::<><>::
-PauseMenu.tscn::PackedScene::2067550789345954008::1718285388::0::1::::<><>::res://PauseMenu.gdshader<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf
+PauseMenu.tscn::PackedScene::2067550789345954008::1718335118::0::1::::<><>::res://PauseMenu.gdshader<>uid://bumelrknnwxkf::::res://8-bit-hud.ttf
 penguin left.png::CompressedTexture2D::7871845800142208814::1714093765::1714093829::1::::<><>::
 penguin right.png::CompressedTexture2D::2275432826778291849::1714093765::1714093829::1::::<><>::
 portal.png::CompressedTexture2D::7500355155796674945::1718076656::1718076657::1::::<><>::
 README.md::TextFile::-1::1714093765::0::1::::<><>::
+real_gojo.gd::GDScript::-1::1718335118::0::1::::<>Area2D<>::
+real_gojo.tscn::PackedScene::5721037330541337040::1718335118::0::1::::<><>::uid://b50h41lxc2bug::::res://_pixel_adventure_1/Free/Traps/Trampoline/infinity.png<>res://real_gojo.gd<>uid://cx8y5r58vnyok::::res://blue.png<>uid://clojppl1be2r8::::res://_pixel_adventure_1/Free/Traps/Trampoline/idleg.png
 Screenshot 2023-05-31 at 5.35.21 PM.jpg::CompressedTexture2D::3099918315641182072::1718247294::1718247294::1::::<><>::
 Speedrun_timer.tscn::PackedScene::6072490064715817110::1716262449::0::1::::<><>::res://timer.gd<>uid://bmmqy6upjbhqd::::res://8bit16 2.ttf
 spike2.tscn::PackedScene::973473605261632741::1718076043::0::1::::<><>::res://Spike.gd<>uid://bycdiwnvx5ulv::::res://Idle.png
@@ -94,7 +97,7 @@ spotifydown.com - Talent Shredder.mp3::AudioStreamMP3::2567552145214556502::1718
 spotifydown.com - カラカラカラのカラ STuPiD DaNCe ReMiX (feat. 初音ミク).mp3::AudioStreamMP3::7099565131420687077::1714093765::1714093829::1::::<><>::
 sr2f2008a7336aws3-1 (dragged).png::CompressedTexture2D::4580132636518118396::1714093765::1714093829::1::::<><>::
 State2.gd::GDScript::-1::1718285345::0::1::::State2<>Node2D<>::
-testscene.tscn::PackedScene::2336755425505453251::1718285389::0::1::::<><>::uid://b5ju3tpm3jwe6::::res://final_gojo.tscn<>uid://c7cospx0xchne::::res://player/player.tscn
+testscene.tscn::PackedScene::2336755425505453251::1718335118::0::1::::<><>::uid://b5ju3tpm3jwe6::::res://final_gojo.tscn<>uid://c7cospx0xchne::::res://player/player.tscn
 timer.gd::GDScript::-1::1718077544::0::1::::<>CanvasLayer<>::
 trial_bf.tscn::PackedScene::5866560493610389743::1718281044::0::1::::<><>::uid://mdc4cyk7dle1::::res://level_markers/level_end/level_end3.tscn
 turtle.png::CompressedTexture2D::1385627987880471129::1717065472::1717065472::1::::<><>::
@@ -310,27 +313,27 @@ window_tall_2.png::CompressedTexture2D::8038196034080822324::1715302989::1715302
 window_tall_3.png::CompressedTexture2D::7948025960846273488::1715302989::1715302955::1::::<><>::
 ::res://level_markers/::1718278683
 enemy.tscn::PackedScene::9210781614792373773::1715302298::0::1::::<><>::
-::res://level_markers/level_end/::1718285388
+::res://level_markers/level_end/::1718335118
 FinalTime.tscn::PackedScene::-1::1718280229::0::1::::<><>::
 FinalTimeMusic.tscn::PackedScene::-1::1718280229::0::1::::<><>::
 level_end2.gd::GDScript::-1::1718280210::0::1::::<>Area2D<>::
 level_end2.tscn::PackedScene::6606526235868879599::1718247294::0::1::::<><>::res://level_markers/level_end/level_end2.gd<>uid://bgtllixtlsdoe::::res://_pixel_adventure_1/Free/Items/Checkpoints/End/End (Idle).png<>uid://b6pfj8hsifg6j::::res://win_music.tscn<>uid://dpvilvrwcvu7y::::res://Children Yay! - Sound Effect.mp3
-level_end3.gd::GDScript::-1::1718280227::0::1::::<>Area2D<>::
-level_end3.tscn::PackedScene::848632621546596902::1718281762::0::1::::<><>::res://level_markers/level_end/gojo2.gd<>res://level_markers/level_end/Gojo.png<>res://level_markers/level_end/red.png<>res://level_markers/level_end/idle.png<>res://level_markers/level_end/infinite.gd<>res://level_markers/level_start/red_bullet.png<>uid://b6pfj8hsifg6j::::res://win_music.tscn<>uid://dpvilvrwcvu7y::::res://Children Yay! - Sound Effect.mp3<>res://level_markers/level_end/blue.png<>res://level_markers/level_end/FiniteStateMachine.gd<>res://idle.gd<>res://level_markers/level_end/blue.gd<>res://level_markers/level_end/red.gd<>uid://cyfb18pj6fk2o::::res://bullet.tscn
+level_end3.gd::GDScript::-1::1718325754::0::1::::<>CharacterBody2D<>::
+level_end3.tscn::PackedScene::848632621546596902::1718325775::0::1::::<><>::res://level_markers/level_end/level_end3.gd<>uid://gmca2ql8xiee::::res://MicrosoftTeams-image (19).png<>uid://b6pfj8hsifg6j::::res://win_music.tscn<>uid://dpvilvrwcvu7y::::res://Children Yay! - Sound Effect.mp3
 level_end.gd::GDScript::-1::1718280227::0::1::::<>Area2D<>::
-level_end.tscn::PackedScene::9222276909024872750::1718285388::0::1::::<><>::uid://bgtllixtlsdoe::::res://_pixel_adventure_1/Free/Items/Checkpoints/End/End (Idle).png<>res://level_markers/level_end/level_end.gd<>uid://b6pfj8hsifg6j::::res://win_music.tscn<>uid://28tmfhjm4rd7::::res://sound_effects/win.wav
+level_end.tscn::PackedScene::9222276909024872750::1718335118::0::1::::<><>::uid://bgtllixtlsdoe::::res://_pixel_adventure_1/Free/Items/Checkpoints/End/End (Idle).png<>res://level_markers/level_end/level_end.gd<>uid://b6pfj8hsifg6j::::res://win_music.tscn<>uid://28tmfhjm4rd7::::res://sound_effects/win.wav
 main_game3.gd::GDScript::-1::1718280227::0::1::::<>Node2D<>::
 main_game3.tscn::PackedScene::1475770228240986512::1718247294::0::1::::<><>::res://level_markers/level_end/main_game3.gd<>uid://b0x0wce4cgu76::::res://Free Pixel Art Forest/Preview/Background.png<>uid://cfojx3gbngwmv::::res://level_designs/level_1.tscn<>uid://c7cospx0xchne::::res://player/player.tscn<>uid://4psi25sn7y0w::::res://PauseMenu.tscn<>uid://cmlyc6t228otu::::res://level_markers/level_reset/level_reset_area.tscn<>uid://542m08y7pian::::res://level_markers/level_start/level_start.tscn<>uid://d4nls2u54ty2q::::res://level_markers/level_end/level_end.tscn<>uid://wi8ar2visryg::::res://left.png<>uid://ca01fkk2hytce::::res://_pixel_adventure_1/Free/Traps/Spike Head/right.png
-main_game4.tscn::PackedScene::577740868357093833::1718281044::0::1::::<><>::res://level_markers/level_end/main_game3.gd<>uid://b0x0wce4cgu76::::res://Free Pixel Art Forest/Preview/Background.png<>uid://c7cospx0xchne::::res://player/player.tscn<>uid://ylsmunbwy42k::::res://level_designs/level_4.tscn<>uid://4psi25sn7y0w::::res://PauseMenu.tscn<>uid://cmlyc6t228otu::::res://level_markers/level_reset/level_reset_area.tscn<>uid://mdc4cyk7dle1::::res://level_markers/level_end/level_end3.tscn<>uid://cpyki70cy023l::::res://zrbue2z2zyr31.png
+main_game4.tscn::PackedScene::577740868357093833::1718335118::0::1::::<><>::res://level_markers/level_end/main_game3.gd<>uid://b0x0wce4cgu76::::res://Free Pixel Art Forest/Preview/Background.png<>uid://c7cospx0xchne::::res://player/player.tscn<>uid://ylsmunbwy42k::::res://level_designs/level_4.tscn<>uid://4psi25sn7y0w::::res://PauseMenu.tscn<>uid://cmlyc6t228otu::::res://level_markers/level_reset/level_reset_area.tscn<>uid://mdc4cyk7dle1::::res://level_markers/level_end/level_end3.tscn<>uid://cnrkwchrlru4o::::res://real_gojo.tscn<>uid://cpyki70cy023l::::res://zrbue2z2zyr31.png
 ::res://level_markers/level_reset/::1714093765
 level_reset_area.gd::GDScript::-1::1714093765::0::1::::<>Area2D<>::
 level_reset_area.tscn::PackedScene::5639278084590742954::1714093765::0::1::::<><>::res://level_markers/level_reset/level_reset_area.gd<>uid://ddw42ygg134gg::::res://sound_effects/lose.wav
 ::res://level_markers/level_start/::1718280227
 level_start.tscn::PackedScene::2167194417536369381::1714093765::0::1::::<><>::uid://c0rt6nsa1axrk::::res://_pixel_adventure_1/Free/Items/Checkpoints/Start/Start (Idle).png
-::res://player/::1718285388
+::res://player/::1718335118
 blue_sign.png::CompressedTexture2D::6842983940952236237::1718247295::1718247295::1::::<><>::
 player.gd::GDScript::-1::1716973221::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::7023896126047838778::1718285388::0::1::::<><>::res://player/player.gd<>uid://crxib1q3e8t12::::res://MicrosoftTeams-image (1).png<>uid://d0ds7utrerrc4::::res://die.png<>uid://dkfgfdw6qnsxq::::res://penguin left.png<>uid://bn47movckifct::::res://explode.png<>uid://7oibtok7i6h6::::res://penguin right.png<>uid://ysqygoufhpja::::res://win animation.png<>uid://csrta260gebja::::res://Speedrun_timer.tscn<>uid://djpu0b0v20353::::res://jump.mp3<>uid://ddamkmaxseyl::::res://diemusic.tscn
+player.tscn::PackedScene::7023896126047838778::1718335118::0::1::::<><>::res://player/player.gd<>uid://crxib1q3e8t12::::res://MicrosoftTeams-image (1).png<>uid://d0ds7utrerrc4::::res://die.png<>uid://dkfgfdw6qnsxq::::res://penguin left.png<>uid://bn47movckifct::::res://explode.png<>uid://7oibtok7i6h6::::res://penguin right.png<>uid://ysqygoufhpja::::res://win animation.png<>uid://csrta260gebja::::res://Speedrun_timer.tscn<>uid://djpu0b0v20353::::res://jump.mp3<>uid://ddamkmaxseyl::::res://diemusic.tscn
 red_sign.png::CompressedTexture2D::8800225434616856876::1718247295::1718247295::1::::<><>::
 yellow_sign.png::CompressedTexture2D::6885117167528322753::1718247295::1718247295::1::::<><>::
 ::res://sound_effects/::1714093830
@@ -549,7 +552,8 @@ Chain.png::CompressedTexture2D::9103668347731114722::1714093765::1714093829::1::
 Spiked Ball.png::CompressedTexture2D::8721080111050467039::1714093765::1714093829::1::::<><>::
 ::res://_pixel_adventure_1/Free/Traps/Spikes/::1714093829
 Idle.png::CompressedTexture2D::5021469870569568207::1714093765::1714093829::1::::<><>::
-::res://_pixel_adventure_1/Free/Traps/Trampoline/::1718281836
+::res://_pixel_adventure_1/Free/Traps/Trampoline/::1718327203
 Idle.png::CompressedTexture2D::2543049977882522377::1718281821::1718281821::1::::<><>::
 idleg.png::CompressedTexture2D::5574393981830813951::1718281836::1718281836::1::::<><>::
+infinity.png::CompressedTexture2D::4544173627306877002::1718327203::1718327203::1::::<><>::
 Jump (28x28).png::CompressedTexture2D::5198199133456125135::1714093765::1714093829::1::::<><>::

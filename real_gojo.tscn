@@ -1,0 +1,239 @@
+[gd_scene load_steps=18 format=3 uid="uid://cnrkwchrlru4o"]
+
+[ext_resource type="Texture2D" uid="uid://b50h41lxc2bug" path="res://_pixel_adventure_1/Free/Traps/Trampoline/infinity.png" id="1_av8o5"]
+[ext_resource type="Script" path="res://real_gojo.gd" id="1_ys1fq"]
+[ext_resource type="Texture2D" uid="uid://cx8y5r58vnyok" path="res://blue.png" id="2_0y6ct"]
+[ext_resource type="Texture2D" uid="uid://clojppl1be2r8" path="res://_pixel_adventure_1/Free/Traps/Trampoline/idleg.png" id="2_uhnlc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7kup0"]
+size = Vector2(20, 58)
+
+[sub_resource type="Animation" id="Animation_k2m57"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_lx0b3"]
+resource_name = "blue"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_0y6ct")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [8]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 7, 4]
+}
+
+[sub_resource type="Animation" id="Animation_c3f38"]
+resource_name = "idle"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_uhnlc")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="Animation" id="Animation_3qpoo"]
+resource_name = "infinity"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_av8o5")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [11]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("infinityattack:monitoring")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_r103p"]
+resource_name = "red"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1lvhv"]
+_data = {
+"RESET": SubResource("Animation_k2m57"),
+"blue": SubResource("Animation_lx0b3"),
+"idle": SubResource("Animation_c3f38"),
+"infinity": SubResource("Animation_3qpoo"),
+"red": SubResource("Animation_r103p")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_057ao"]
+radius = 41.0122
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jw0m2"]
+size = Vector2(194, 111)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wksg4"]
+size = Vector2(273, 37)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p5oxg"]
+size = Vector2(33, 106)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yjbf3"]
+size = Vector2(20, 106)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e5ine"]
+size = Vector2(266, 20)
+
+[node name="RealGojo" type="Area2D"]
+script = ExtResource("1_ys1fq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_0y6ct")
+hframes = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_7kup0")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_1lvhv")
+}
+autoplay = "idle"
+
+[node name="infinityattack" type="Area2D" parent="."]
+monitoring = false
+
+[node name="attack" type="CollisionShape2D" parent="infinityattack"]
+shape = SubResource("CircleShape2D_057ao")
+
+[node name="Infinitydetec" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Infinitydetec"]
+position = Vector2(3, -15.5)
+shape = SubResource("RectangleShape2D_jw0m2")
+
+[node name="Bluedetec" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bluedetec"]
+position = Vector2(-6.5, -94)
+shape = SubResource("RectangleShape2D_wksg4")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Bluedetec"]
+position = Vector2(-121.5, -14)
+shape = SubResource("RectangleShape2D_p5oxg")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Bluedetec"]
+position = Vector2(119, -14)
+shape = SubResource("RectangleShape2D_yjbf3")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Bluedetec"]
+position = Vector2(-5, 57)
+shape = SubResource("RectangleShape2D_e5ine")
+
+[connection signal="body_entered" from="infinityattack" to="." method="_on_infinityattack_body_entered"]
+[connection signal="body_entered" from="Infinitydetec" to="." method="_on_infinitydetec_body_entered"]
+[connection signal="body_entered" from="Bluedetec" to="." method="_on_bluedetec_body_entered"]

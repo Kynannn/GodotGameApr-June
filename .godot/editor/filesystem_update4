@@ -1,10 +1,8 @@
-res://final_gojo.tscn
-res://testscene.tscn
-res://player/player.tscn
+res://level_markers/level_end/main_game4.tscn
+res://real_gojo.gd
 res://level_markers/level_end/level_end.tscn
 res://PauseMenu.tscn
-res://FSM.gd
-res://State2.gd
-res://level_markers/level_end/FiniteStateMachine.gd
-res://final_gojo.gd
-res://idle.gd
+res://testscene.tscn
+res://player/player.tscn
+res://real_gojo.tscn
+res://main_game.tscn
