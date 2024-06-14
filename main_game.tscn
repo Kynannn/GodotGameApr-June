@@ -79,7 +79,7 @@ text = "hi"
 
 [node name="Player" parent="." instance=ExtResource("2_5uk8r")]
 z_index = 1
-position = Vector2(24, 133)
+position = Vector2(21, 126)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -106,9 +106,10 @@ scroll_offset = Vector2(10, 2.08165e-12)
 motion_mirroring = Vector2(793, 2.08165e-12)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(297, -48)
+position = Vector2(86, 71)
 scale = Vector2(0.9, 0.9)
 texture = ExtResource("2_cvu38")
+offset = Vector2(311.111, -134.444)
 
 [node name="Left" type="Sprite2D" parent="."]
 position = Vector2(502, 297)

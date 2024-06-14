@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvufeb77t8ifu"
-path="res://.godot/imported/Idle.png-4c259d6ef325ec19f29f7f8c54bbbb14.ctex"
+uid="uid://b50h41lxc2bug"
+path="res://.godot/imported/infinity.png-e6cf7e5fa9c94a7d7b50517c9a921efd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Idle.png"
-dest_files=["res://.godot/imported/Idle.png-4c259d6ef325ec19f29f7f8c54bbbb14.ctex"]
+source_file="res://_pixel_adventure_1/Free/Traps/Trampoline/infinity.png"
+dest_files=["res://.godot/imported/infinity.png-e6cf7e5fa9c94a7d7b50517c9a921efd.ctex"]
 
 [params]
 

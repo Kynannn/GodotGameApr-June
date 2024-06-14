@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://bafwi0bcu0ywd"]
+
+[ext_resource type="Script" path="res://test.gd" id="1_qwse2"]
+[ext_resource type="PackedScene" uid="uid://bus2upfyjrnll" path="res://gojo.tscn" id="1_yave0"]
+[ext_resource type="PackedScene" uid="uid://cftir6eoaieav" path="res://player.tscn" id="2_ox1hg"]
+
+[node name="Test" type="Node2D"]
+script = ExtResource("1_qwse2")
+
+[node name="Gojo" parent="." instance=ExtResource("1_yave0")]
+position = Vector2(136, 111)
+
+[node name="player" parent="." instance=ExtResource("2_ox1hg")]
+position = Vector2(323, 139)
