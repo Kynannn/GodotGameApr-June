@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpt2nnyhde6b8"]
+
+[ext_resource type="PackedScene" uid="uid://mdc4cyk7dle1" path="res://level_markers/level_end/level_end3.tscn" id="1_okht6"]
+
+[node name="TrialBF" type="Node2D"]
+
+[node name="Gojo" parent="." instance=ExtResource("1_okht6")]
