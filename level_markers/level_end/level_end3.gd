@@ -1,4 +1,4 @@
-extends Area2D
+extends CharacterBody2D
 
 var level_time = 0
 var sound = false

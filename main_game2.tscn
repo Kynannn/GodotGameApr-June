@@ -66,24 +66,24 @@ position = Vector2(2, -4.76837e-06)
 position = Vector2(2414, -73)
 
 [node name="Spike2" parent="." instance=ExtResource("11_b47ci")]
-position = Vector2(2690, 288)
+position = Vector2(2788, -75)
 
 [node name="Spike7" parent="." instance=ExtResource("11_b47ci")]
-position = Vector2(2609, 288)
+position = Vector2(2666, -74)
 
 [node name="Spike4" parent="." instance=ExtResource("11_b47ci")]
 position = Vector2(2646, -39)
 
 [node name="Spike3" parent="." instance=ExtResource("11_b47ci")]
-position = Vector2(3267, -63)
+position = Vector2(3262, -226)
 scale = Vector2(0.994612, 1)
 
 [node name="Spike6" parent="." instance=ExtResource("11_b47ci")]
-position = Vector2(3256, -63)
+position = Vector2(3251, -226)
 scale = Vector2(0.994612, 1)
 
 [node name="Spike5" parent="." instance=ExtResource("11_b47ci")]
-position = Vector2(3564, -60)
+position = Vector2(3559, -223)
 
 [node name="wenbi" parent="." instance=ExtResource("12_e3sky")]
 position = Vector2(3055, 430)
@@ -116,7 +116,7 @@ position = Vector2(-1.75024, -3.25)
 shape = SubResource("CircleShape2D_dgr7w")
 
 [node name="Spike8" parent="." instance=ExtResource("11_b47ci")]
-position = Vector2(272, -267)
+position = Vector2(276, -348)
 
 [node name="RedSign" type="Sprite2D" parent="."]
 position = Vector2(574, 68)
