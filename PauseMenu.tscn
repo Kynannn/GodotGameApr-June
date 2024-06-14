@@ -31,7 +31,7 @@ func _on_resume_pressed():
 func _on_restart_pressed():
 	Global.speedrun_time = 0.0
 	resume()
-	get_tree().reload_current_scene()
+	get_tree().change_scene_to_file(\"res://main_game.tscn\")
 
 func _on_quit_pressed():
 	resume()
