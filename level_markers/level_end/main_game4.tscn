@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://ih4kpxta3k6d"]
+[gd_scene load_steps=10 format=3 uid="uid://ih4kpxta3k6d"]
 
 [ext_resource type="Script" path="res://level_markers/level_end/main_game3.gd" id="1_rtraj"]
 [ext_resource type="Texture2D" uid="uid://b0x0wce4cgu76" path="res://Free Pixel Art Forest/Preview/Background.png" id="2_1ep2s"]
@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://ylsmunbwy42k" path="res://level_designs/level_4.tscn" id="4_oy3it"]
 [ext_resource type="PackedScene" uid="uid://4psi25sn7y0w" path="res://PauseMenu.tscn" id="5_3jq7r"]
 [ext_resource type="PackedScene" uid="uid://cmlyc6t228otu" path="res://level_markers/level_reset/level_reset_area.tscn" id="6_dotq1"]
-[ext_resource type="PackedScene" uid="uid://mdc4cyk7dle1" path="res://level_markers/level_end/level_end3.tscn" id="7_d2ocn"]
 [ext_resource type="PackedScene" uid="uid://cnrkwchrlru4o" path="res://real_gojo.tscn" id="9_cvbqo"]
 [ext_resource type="Texture2D" uid="uid://cpyki70cy023l" path="res://zrbue2z2zyr31.png" id="10_qmgg1"]
 
@@ -32,7 +31,7 @@ position = Vector2(115, 129)
 
 [node name="Player" parent="." instance=ExtResource("4_ace4k")]
 z_index = 1
-position = Vector2(115, 135)
+position = Vector2(236, 203)
 
 [node name="Level4" parent="." instance=ExtResource("4_oy3it")]
 position = Vector2(-21, -31)
@@ -53,14 +52,11 @@ shape = SubResource("RectangleShape2D_ldtb2")
 show_behind_parent = true
 light_mask = 4
 visibility_layer = 4
-position = Vector2(227, 133)
+position = Vector2(231, 138)
 scale = Vector2(0.14, 0.14)
 texture = ExtResource("10_qmgg1")
 
-[node name="LevelEnd2" parent="." instance=ExtResource("7_d2ocn")]
-position = Vector2(333, -23)
-
 [node name="RealGojo" parent="." instance=ExtResource("9_cvbqo")]
-position = Vector2(191, 210)
+position = Vector2(-4, 207)
 
 [connection signal="body_entered" from="LevelResetArea" to="." method="_on_level_reset_area_body_entered"]
