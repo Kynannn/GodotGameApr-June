@@ -1,6 +1,8 @@
+Area2D
+CollisionShape2D
 CharacterBody2D
-AudioStreamPlayer
 Label
+AudioStreamPlayer
 VBoxContainer
 MarginContainer
 Button
@@ -8,8 +10,5 @@ Control
 Camera2D
 Sprite2D
 VideoStreamPlayer
-Area2D
-CollisionShape2D
 TextEdit
 AnimationPlayer
-AnimationTree

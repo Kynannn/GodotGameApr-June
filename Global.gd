@@ -2,6 +2,7 @@ extends Node
 
 var speedrun_time = 0
 var complete_time = "0"
+var best_time = 999999999999999
 
 signal ResetTimer()
 

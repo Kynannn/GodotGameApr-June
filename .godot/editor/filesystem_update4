@@ -13,3 +13,7 @@ res://level_markers/level_end/FinalTimeMusic.tscn
 res://level_markers/level_reset/level_reset_area.tscn
 res://PauseMenu.tscn
 res://level_markers/level_end/level_end3.gd
+res://Global.gd
+res://FinalTime.gd
+res://menu.gd
+res://level_markers/level_end/main_game3.tscn
