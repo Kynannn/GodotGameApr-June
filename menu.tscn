@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://d3wl2alj6r2k7"]
+[gd_scene load_steps=5 format=3 uid="uid://d3wl2alj6r2k7"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_4yon1"]
 [ext_resource type="PackedScene" uid="uid://bllt806y6he3s" path="res://bg_settings.tscn" id="2_uo1c8"]
 [ext_resource type="FontFile" uid="uid://bumelrknnwxkf" path="res://8-bit-hud.ttf" id="3_uol8c"]
+[ext_resource type="FontFile" uid="uid://bmmqy6upjbhqd" path="res://8bit16 2.ttf" id="4_dgpjc"]
 
 [node name="menu" type="Control"]
 layout_mode = 3
@@ -66,6 +67,16 @@ text = "How to Play
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_uol8c")
 text = "Quit"
+
+[node name="TopScore" type="Label" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 13
+theme_override_fonts/font = ExtResource("4_dgpjc")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]

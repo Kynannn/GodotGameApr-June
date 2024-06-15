@@ -8,7 +8,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j0vln"]
 size = Vector2(16, 60)
 
-[node name="LevelEnd" type="CharacterBody2D"]
+[node name="LevelEnd" type="Area2D"]
 script = ExtResource("1_pf8ol")
 
 [node name="Trophy" type="Sprite2D" parent="."]
@@ -25,3 +25,5 @@ shape = SubResource("RectangleShape2D_j0vln")
 [node name="win_music" parent="." instance=ExtResource("3_s61lj")]
 stream = ExtResource("4_hl2j3")
 volume_db = 1.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
