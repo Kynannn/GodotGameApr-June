@@ -1,8 +1,11 @@
-res://level_markers/level_end/main_game4.tscn
-res://real_gojo.gd
 res://level_markers/level_end/level_end.tscn
 res://PauseMenu.tscn
 res://testscene.tscn
+res://level_markers/level_end/main_game4.tscn
 res://player/player.tscn
 res://real_gojo.tscn
 res://main_game.tscn
+res://real_gojo.gd
+res://level_markers/level_end/main_game3.gd
+res://Speedrun_timer.tscn
+res://level_designs/level_4.tscn

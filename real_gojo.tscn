@@ -25,6 +25,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_lx0b3"]
 resource_name = "blue"
+length = 0.6
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -57,10 +58,10 @@ tracks/2/path = NodePath("Sprite2D:frame")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [0, 1, 2, 3, 4, 5, 6, 7, 7, 4]
+"values": [4, 5, 6, 7, 7, 4]
 }
 
 [sub_resource type="Animation" id="Animation_c3f38"]
@@ -139,10 +140,10 @@ tracks/2/path = NodePath("Sprite2D:frame")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+"values": [2, 3, 4, 5, 6, 7, 8, 9]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -151,7 +152,7 @@ tracks/3/path = NodePath("infinityattack:monitoring")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0.4, 0.8),
+"times": PackedFloat32Array(0.3, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -173,16 +174,16 @@ _data = {
 radius = 41.0122
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jw0m2"]
-size = Vector2(194, 111)
+size = Vector2(137, 111)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wksg4"]
 size = Vector2(273, 37)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p5oxg"]
-size = Vector2(33, 106)
+size = Vector2(61, 106)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yjbf3"]
-size = Vector2(20, 106)
+size = Vector2(128, 137)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e5ine"]
 size = Vector2(266, 20)
@@ -202,7 +203,7 @@ shape = SubResource("RectangleShape2D_7kup0")
 libraries = {
 "": SubResource("AnimationLibrary_1lvhv")
 }
-autoplay = "idle"
+autoplay = "infinity"
 
 [node name="infinityattack" type="Area2D" parent="."]
 monitoring = false
@@ -213,7 +214,7 @@ shape = SubResource("CircleShape2D_057ao")
 [node name="Infinitydetec" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Infinitydetec"]
-position = Vector2(3, -15.5)
+position = Vector2(4.5, -15.5)
 shape = SubResource("RectangleShape2D_jw0m2")
 
 [node name="Bluedetec" type="Area2D" parent="."]
@@ -223,11 +224,11 @@ position = Vector2(-6.5, -94)
 shape = SubResource("RectangleShape2D_wksg4")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Bluedetec"]
-position = Vector2(-121.5, -14)
+position = Vector2(-107.5, -14)
 shape = SubResource("RectangleShape2D_p5oxg")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Bluedetec"]
-position = Vector2(119, -14)
+position = Vector2(139, -29.5)
 shape = SubResource("RectangleShape2D_yjbf3")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Bluedetec"]
@@ -236,4 +237,6 @@ shape = SubResource("RectangleShape2D_e5ine")
 
 [connection signal="body_entered" from="infinityattack" to="." method="_on_infinityattack_body_entered"]
 [connection signal="body_entered" from="Infinitydetec" to="." method="_on_infinitydetec_body_entered"]
+[connection signal="body_exited" from="Infinitydetec" to="." method="_on_infinitydetec_body_exited"]
 [connection signal="body_entered" from="Bluedetec" to="." method="_on_bluedetec_body_entered"]
+[connection signal="body_exited" from="Bluedetec" to="." method="_on_bluedetec_body_exited"]

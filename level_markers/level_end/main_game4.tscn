@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://ih4kpxta3k6d"]
+[gd_scene load_steps=13 format=3 uid="uid://ih4kpxta3k6d"]
 
 [ext_resource type="Script" path="res://level_markers/level_end/main_game3.gd" id="1_rtraj"]
 [ext_resource type="Texture2D" uid="uid://b0x0wce4cgu76" path="res://Free Pixel Art Forest/Preview/Background.png" id="2_1ep2s"]
@@ -11,6 +11,14 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ldtb2"]
 size = Vector2(4224, 51)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qsusu"]
+size = Vector2(64, 105)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lyili"]
+size = Vector2(248, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_llxkx"]
 
 [node name="MainGame" type="Node2D"]
 script = ExtResource("1_rtraj")
@@ -59,4 +67,21 @@ texture = ExtResource("10_qmgg1")
 [node name="RealGojo" parent="." instance=ExtResource("9_cvbqo")]
 position = Vector2(-4, 207)
 
+[node name="fakeblue" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fakeblue"]
+position = Vector2(104, 193)
+shape = SubResource("RectangleShape2D_qsusu")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="fakeblue"]
+position = Vector2(4, 123)
+shape = SubResource("RectangleShape2D_lyili")
+
+[node name="blueffect" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blueffect"]
+position = Vector2(24, 229)
+shape = SubResource("RectangleShape2D_llxkx")
+
 [connection signal="body_entered" from="LevelResetArea" to="." method="_on_level_reset_area_body_entered"]
+[connection signal="body_entered" from="fakeblue" to="." method="_on_fakeblue_body_entered"]

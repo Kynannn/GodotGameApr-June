@@ -79,7 +79,6 @@ text = "hi"
 
 [node name="Player" parent="." instance=ExtResource("2_5uk8r")]
 z_index = 1
-position = Vector2(21, 126)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
