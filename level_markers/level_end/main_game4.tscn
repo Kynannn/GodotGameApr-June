@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://ih4kpxta3k6d"]
+[gd_scene load_steps=12 format=3 uid="uid://ih4kpxta3k6d"]
 
 [ext_resource type="Script" path="res://level_markers/level_end/main_game3.gd" id="1_rtraj"]
 [ext_resource type="Texture2D" uid="uid://b0x0wce4cgu76" path="res://Free Pixel Art Forest/Preview/Background.png" id="2_1ep2s"]
@@ -6,14 +6,18 @@
 [ext_resource type="PackedScene" uid="uid://ylsmunbwy42k" path="res://level_designs/level_4.tscn" id="4_oy3it"]
 [ext_resource type="PackedScene" uid="uid://4psi25sn7y0w" path="res://PauseMenu.tscn" id="5_3jq7r"]
 [ext_resource type="PackedScene" uid="uid://cmlyc6t228otu" path="res://level_markers/level_reset/level_reset_area.tscn" id="6_dotq1"]
-[ext_resource type="PackedScene" uid="uid://mdc4cyk7dle1" path="res://level_markers/level_end/level_end3.tscn" id="9_cb7qe"]
 [ext_resource type="PackedScene" uid="uid://cnrkwchrlru4o" path="res://real_gojo.tscn" id="9_cvbqo"]
 [ext_resource type="Texture2D" uid="uid://cpyki70cy023l" path="res://zrbue2z2zyr31.png" id="10_qmgg1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ldtb2"]
 size = Vector2(4224, 51)
 
-[node name="MainGame2" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qsusu"]
+size = Vector2(64, 105)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_llxkx"]
+
+[node name="MainGame" type="Node2D"]
 script = ExtResource("1_rtraj")
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -27,12 +31,13 @@ offset_bottom = 656.0
 texture = ExtResource("2_1ep2s")
 stretch_mode = 4
 
-[node name="Camera2D2" type="Camera2D" parent="."]
-position = Vector2(115, 129)
-
 [node name="Player" parent="." instance=ExtResource("4_ace4k")]
 z_index = 1
-position = Vector2(236, 203)
+position = Vector2(448, 206)
+
+[node name="Camera2D2" type="Camera2D" parent="Player"]
+position = Vector2(-214, -77)
+zoom = Vector2(0.582, 1)
 
 [node name="Level4" parent="." instance=ExtResource("4_oy3it")]
 position = Vector2(-21, -31)
@@ -53,14 +58,28 @@ shape = SubResource("RectangleShape2D_ldtb2")
 show_behind_parent = true
 light_mask = 4
 visibility_layer = 4
-position = Vector2(231, 138)
-scale = Vector2(0.14, 0.14)
+position = Vector2(236, 135)
+scale = Vector2(0.142585, 0.136111)
 texture = ExtResource("10_qmgg1")
 
 [node name="RealGojo" parent="." instance=ExtResource("9_cvbqo")]
-position = Vector2(-4, 207)
+position = Vector2(183, 201)
 
-[node name="LevelEnd" parent="." instance=ExtResource("9_cb7qe")]
-position = Vector2(409, 351)
+[node name="fakeblue" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fakeblue"]
+position = Vector2(289, 188)
+shape = SubResource("RectangleShape2D_qsusu")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="fakeblue"]
+position = Vector2(53, 186)
+shape = SubResource("RectangleShape2D_qsusu")
+
+[node name="blueffect" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blueffect"]
+position = Vector2(182, 200)
+shape = SubResource("RectangleShape2D_llxkx")
 
 [connection signal="body_entered" from="LevelResetArea" to="." method="_on_level_reset_area_body_entered"]
+[connection signal="body_entered" from="fakeblue" to="." method="_on_fakeblue_body_entered"]

@@ -237,7 +237,8 @@ animations = [{
 size = Vector2(24, 28)
 
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
-position = Vector2(40, 2.08165e-12)
+z_index = 5
+position = Vector2(1, 0)
 script = ExtResource("1_jg16v")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
