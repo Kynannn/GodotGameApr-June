@@ -9,7 +9,7 @@ var Player
  
 
 func _on_reddetec_body_entered(_body):
-	Player = get_parent().find_child("player")
+	Player = get_parent().find_child("Player")
 
 func _physics_process(_delta):
 	_aim()
