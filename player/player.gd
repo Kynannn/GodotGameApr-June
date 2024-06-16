@@ -62,6 +62,11 @@ func die() -> void:
 		$AnimatedSprite2D.play("explode")
 		is_dead = true
 		$ResetLevelTimer.start()
+		
+#func blueffect() -> void:
+	#$".".position.x -= 30
+	#$diemusic.play()
+	#$ResetLevelTimer.start()
 
 
 func _on_animated_sprite_2d_animation_finished():

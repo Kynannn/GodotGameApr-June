@@ -31,12 +31,13 @@ offset_bottom = 656.0
 texture = ExtResource("2_1ep2s")
 stretch_mode = 4
 
-[node name="Camera2D2" type="Camera2D" parent="."]
-position = Vector2(317, 124)
-
 [node name="Player" parent="." instance=ExtResource("4_ace4k")]
 z_index = 1
 position = Vector2(448, 206)
+
+[node name="Camera2D2" type="Camera2D" parent="Player"]
+position = Vector2(-214, -77)
+zoom = Vector2(0.582, 1)
 
 [node name="Level4" parent="." instance=ExtResource("4_oy3it")]
 position = Vector2(-21, -31)
@@ -62,22 +63,22 @@ scale = Vector2(0.142585, 0.136111)
 texture = ExtResource("10_qmgg1")
 
 [node name="RealGojo" parent="." instance=ExtResource("9_cvbqo")]
-position = Vector2(198, 202)
+position = Vector2(183, 201)
 
 [node name="fakeblue" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fakeblue"]
-position = Vector2(306, 188)
+position = Vector2(289, 188)
 shape = SubResource("RectangleShape2D_qsusu")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="fakeblue"]
-position = Vector2(101, 186)
+position = Vector2(53, 186)
 shape = SubResource("RectangleShape2D_qsusu")
 
 [node name="blueffect" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="blueffect"]
-position = Vector2(226, 224)
+position = Vector2(182, 200)
 shape = SubResource("RectangleShape2D_llxkx")
 
 [connection signal="body_entered" from="LevelResetArea" to="." method="_on_level_reset_area_body_entered"]

@@ -9,3 +9,7 @@ res://real_gojo.gd
 res://level_markers/level_end/main_game3.gd
 res://Speedrun_timer.tscn
 res://level_designs/level_4.tscn
+res://player/player.gd
+res://wenbi.tscn
+res://redbulllet.gd
+res://redbulllet.tscn

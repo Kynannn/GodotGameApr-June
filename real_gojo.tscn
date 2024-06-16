@@ -1,8 +1,9 @@
-[gd_scene load_steps=18 format=3 uid="uid://cnrkwchrlru4o"]
+[gd_scene load_steps=20 format=3 uid="uid://cnrkwchrlru4o"]
 
 [ext_resource type="Texture2D" uid="uid://b50h41lxc2bug" path="res://_pixel_adventure_1/Free/Traps/Trampoline/infinity.png" id="1_av8o5"]
 [ext_resource type="Script" path="res://real_gojo.gd" id="1_ys1fq"]
 [ext_resource type="Texture2D" uid="uid://cx8y5r58vnyok" path="res://blue.png" id="2_0y6ct"]
+[ext_resource type="PackedScene" uid="uid://dun1xug337eio" path="res://redbulllet.tscn" id="2_fup23"]
 [ext_resource type="Texture2D" uid="uid://clojppl1be2r8" path="res://_pixel_adventure_1/Free/Traps/Trampoline/idleg.png" id="2_uhnlc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7kup0"]
@@ -173,11 +174,8 @@ _data = {
 [sub_resource type="CircleShape2D" id="CircleShape2D_057ao"]
 radius = 41.0122
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jw0m2"]
-size = Vector2(137, 111)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wksg4"]
-size = Vector2(273, 37)
+[sub_resource type="CircleShape2D" id="CircleShape2D_5myce"]
+radius = 50.5025
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p5oxg"]
 size = Vector2(61, 106)
@@ -188,8 +186,15 @@ size = Vector2(128, 137)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e5ine"]
 size = Vector2(266, 20)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wksg4"]
+size = Vector2(273, 37)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5hlgx"]
+size = Vector2(20, 113)
+
 [node name="RealGojo" type="Area2D"]
 script = ExtResource("1_ys1fq")
+ammo = ExtResource("2_fup23")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_0y6ct")
@@ -214,14 +219,10 @@ shape = SubResource("CircleShape2D_057ao")
 [node name="Infinitydetec" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Infinitydetec"]
-position = Vector2(4.5, -15.5)
-shape = SubResource("RectangleShape2D_jw0m2")
+position = Vector2(-1, -2)
+shape = SubResource("CircleShape2D_5myce")
 
 [node name="Bluedetec" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bluedetec"]
-position = Vector2(-6.5, -94)
-shape = SubResource("RectangleShape2D_wksg4")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Bluedetec"]
 position = Vector2(-107.5, -14)
@@ -235,8 +236,28 @@ shape = SubResource("RectangleShape2D_yjbf3")
 position = Vector2(-5, 57)
 shape = SubResource("RectangleShape2D_e5ine")
 
+[node name="reddetec" type="Area2D" parent="."]
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="reddetec"]
+position = Vector2(-6.5, -94)
+shape = SubResource("RectangleShape2D_wksg4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="reddetec"]
+position = Vector2(62, -15.5)
+shape = SubResource("RectangleShape2D_5hlgx")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="reddetec"]
+position = Vector2(-64, -14)
+shape = SubResource("RectangleShape2D_5hlgx")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+
 [connection signal="body_entered" from="infinityattack" to="." method="_on_infinityattack_body_entered"]
 [connection signal="body_entered" from="Infinitydetec" to="." method="_on_infinitydetec_body_entered"]
 [connection signal="body_exited" from="Infinitydetec" to="." method="_on_infinitydetec_body_exited"]
 [connection signal="body_entered" from="Bluedetec" to="." method="_on_bluedetec_body_entered"]
 [connection signal="body_exited" from="Bluedetec" to="." method="_on_bluedetec_body_exited"]
+[connection signal="body_entered" from="reddetec" to="." method="_on_reddetec_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
